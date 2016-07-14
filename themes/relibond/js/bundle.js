@@ -3,11 +3,4 @@
 
 console.log('alrighty then');
 
-alert('checksdfsdsfddsfg');
-
-var check = 'hello';
-console.log(check);
-
-console.log('yesss');
-
 },{}]},{},[1]);
