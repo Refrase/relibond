@@ -1,3 +1,17 @@
+/*!
+Theme Name: Relibond
+Author: Andreas Reffstrup Rasmussen
+Author URI: http://andreasreffstrup.com
+Description: Special made theme for relibond.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: power, connection
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 $icon-font-path: '../fonts/';
 
 // bower:scss
@@ -14,6 +28,7 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: blue;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
