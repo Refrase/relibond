@@ -17,6 +17,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -291,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -301,7 +304,7 @@ abbr[data-original-title] {
 }
 
 address {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-style: normal;
   line-height: inherit;
 }
@@ -310,7 +313,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 ol ol,
@@ -330,7 +333,7 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 0 0 0;
 }
 
 a {
@@ -338,24 +341,13 @@ a {
   text-decoration: none;
 }
 
-a:focus, a:hover {
-  color: #014c8c;
-  text-decoration: underline;
-}
-
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
 pre {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 figure {
-  margin: 0 0 1rem;
+  margin: 0 0 0;
 }
 
 img {
@@ -1358,6 +1350,239 @@ output {
   }
 }
 
+/* ----- Partials ----- */
+/* ----- Scale ----- */
+/* ----- Colors ----- */
+/* ----- Font-family ----- */
+/* ----- Font-size ----- */
+/* ----- Font-weight ----- */
+/* ----- Line-height ----- */
+/* ----- Border-radius ----- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+}
+
+h5,
+h6 {
+  font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p, a {
+  color: #111;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+/* ----- Scale ----- */
+/* ----- Colors ----- */
+/* ----- Font-family ----- */
+/* ----- Font-size ----- */
+/* ----- Font-weight ----- */
+/* ----- Line-height ----- */
+/* ----- Border-radius ----- */
+/* ----- Nav ----- */
+/* ----- Scale ----- */
+/* ----- Colors ----- */
+/* ----- Font-family ----- */
+/* ----- Font-size ----- */
+/* ----- Font-weight ----- */
+/* ----- Line-height ----- */
+/* ----- Border-radius ----- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutAndRemove {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUpToMiddle {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    right: -16px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    left: -16px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes subtleAlive {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  30% {
+    transform: translate3d(0, -16px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 32px -2px rgba(97, 97, 118, 0.25);
+  line-height: 47px;
+}
+
+.nav li {
+  border-right: 1px solid #ececec;
+  position: relative;
+  width: 100%;
+}
+
+.nav li:last-child {
+  border-right: none;
+}
+
+.nav li a {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-out;
+  letter-spacing: 0.8px;
+}
+
+.nav li a:hover {
+  background: #f7f7f7;
+}
+
+.nav li a.active:before, .nav li a.active:after {
+  content: "\2013\2013\2013";
+  position: relative;
+  bottom: 1px;
+  letter-spacing: 0;
+  opacity: 0;
+}
+
+.nav li a.active:before {
+  margin-right: 8px;
+  color: #E39321;
+  animation: fadeIn 0.3s 0.1s ease-in forwards, slideInFromLeft 0.6s ease-out;
+}
+
+.nav li a.active:after {
+  margin-left: 8px;
+  color: #2E73B9;
+  animation: fadeIn 0.3s 0.1s ease-in forwards, slideInFromRight 0.6s ease-out;
+}
+
+/* ----- Main ----- */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -1365,83 +1590,29 @@ output {
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: #f0f0f0;
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/* ----- Bootstrap snippets ----- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  /* Make the masthead heading the same height as the navigation */
-}
-
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }

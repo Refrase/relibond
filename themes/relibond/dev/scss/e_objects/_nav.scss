@@ -1,0 +1,62 @@
+/* ----- Nav ----- */
+
+@import '../a_settings/_animations';
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 32px -2px rgba($color-shadow-darker-3, 0.25);
+  line-height: 47px;
+
+  li {
+    border-right: 1px solid $color-brandWhite;
+    position: relative;
+    width: 100%;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    a {
+      display: block;
+      padding: 14px;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: $fontFamily-headline;
+      font-weight: $fontWeight-bold;
+      transition: all 0.3s ease-out;
+      letter-spacing: 0.8px;
+
+      &:hover {
+        background: #f7f7f7;
+      }
+
+      &.active {
+
+        &:before,
+        &:after {
+          content: "\2013\2013\2013";
+          position: relative;
+          bottom: 1px;
+          letter-spacing: 0;
+          opacity: 0;
+        }
+
+        &:before {
+          margin-right: $scale-1-2;
+          color: $color-brandFirst;
+          animation: fadeIn 0.3s 0.1s ease-in forwards, slideInFromLeft 0.6s ease-out;
+        }
+
+        &:after {
+          margin-left: $scale-1-2;
+          color: $color-brandSecond;
+          animation: fadeIn 0.3s 0.1s ease-in forwards, slideInFromRight 0.6s ease-out;
+        }
+      }
+    }
+  }
+}

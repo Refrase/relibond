@@ -1,0 +1,42 @@
+@import './_variables';
+@import './_breakpoints';
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $fontFamily-headline;
+}
+
+h5,
+h6 {
+  font-family: $fontFamily-system;
+  font-weight: $fontWeight-medium;
+}
+
+h1 {
+  font-size: $fontSize-title;
+  letter-spacing: 2px;
+  line-height: 1.2;
+
+  @include breakpoint( 'mobileMedium' ) {
+    font-size: $fontSize-xxlarge;
+  }
+
+}
+
+h2 { font-size: $fontSize-xxlarge; }
+h3 { font-size: $fontSize-xlarge; }
+h4 { font-size: $fontSize-large; }
+h5 { font-size: $fontSize-base; }
+h6 { font-size: $fontSize-small; }
+
+p, a {
+
+  color: $color-brandBlack;
+  font-family: $fontFamily-body;
+  font-size: $fontSize-base;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+
+}

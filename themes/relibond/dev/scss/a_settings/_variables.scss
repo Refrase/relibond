@@ -1,0 +1,127 @@
+$grid-float-breakpoint: 798px; // Point for the navbar to put links into collapse
+
+/* ----- Scale ----- */
+
+$scale: 16px;
+
+$scale-5-1: $scale * 5;
+$scale-4-1: $scale * 4;
+$scale-3-1: $scale * 3;
+$scale-2-1: $scale * 2;
+
+$scale-1-2: $scale / 2;
+$scale-1-4: $scale / 4;
+$scale-1-8: $scale / 8;
+
+/* ----- Colors ----- */
+
+// ----- Main
+$color-brandFirst: #E39321;
+
+// Main darker
+$color-brandFirst-darker-3: darken( $color-brandFirst, 30% );
+$color-brandFirst-darker-2: darken( $color-brandFirst, 20% );
+$color-brandFirst-darker-1: darken( $color-brandFirst, 10% );
+
+// Main lighter
+$color-brandFirst-lighter-1: lighten( $color-brandFirst, 10% );
+$color-brandFirst-lighter-2: lighten( $color-brandFirst, 20% );
+$color-brandFirst-lighter-3: lighten( $color-brandFirst, 30% );
+
+// ----- Complementary
+$color-brandSecond: #2E73B9;
+
+// Complementary darker
+$color-brandSecond-darker-3: darken( $color-brandSecond, 30% );
+$color-brandSecond-darker-2: darken( $color-brandSecond, 20% );
+$color-brandSecond-darker-1: darken( $color-brandSecond, 10% );
+
+// Complementary lighter
+$color-brandSecond-lighter-1: lighten( $color-brandSecond, 10% );
+$color-brandSecond-lighter-2: lighten( $color-brandSecond, 20% );
+$color-brandSecond-lighter-3: lighten( $color-brandSecond, 30% );
+
+// ----- Black
+$color-brandBlack: #111;
+
+// Main darker
+$color-brandBlack-darker-3: darken( $color-brandBlack, 30% );
+$color-brandBlack-darker-2: darken( $color-brandBlack, 20% );
+$color-brandBlack-darker-1: darken( $color-brandBlack, 10% );
+
+// Main lighter
+$color-brandBlack-lighter-1: lighten( $color-brandBlack, 10% );
+$color-brandBlack-lighter-2: lighten( $color-brandBlack, 20% );
+$color-brandBlack-lighter-3: lighten( $color-brandBlack, 30% );
+
+// ----- White
+$color-brandWhite: #ececec;
+
+// Complementary darker
+$color-brandWhite-darker-3: darken( $color-brandWhite, 30% );
+$color-brandWhite-darker-2: darken( $color-brandWhite, 20% );
+$color-brandWhite-darker-1: darken( $color-brandWhite, 10% );
+
+// Complementary lighter
+$color-brandWhite-lighter-1: lighten( $color-brandWhite, 10% );
+$color-brandWhite-lighter-2: lighten( $color-brandWhite, 20% );
+$color-brandWhite-lighter-3: lighten( $color-brandWhite, 30% );
+
+// ----- Shadow
+$color-shadow: #B1B1BF;
+
+// Shadow darker
+$color-shadow-darker-3: darken( $color-shadow, 30% );
+$color-shadow-darker-2: darken( $color-shadow, 20% );
+$color-shadow-darker-1: darken( $color-shadow, 10% );
+
+// Shwadow lighter
+$color-shadow-lighter-1: lighten( $color-shadow, 10% );
+$color-shadow-lighter-2: lighten( $color-shadow, 20% );
+$color-shadow-lighter-3: lighten( $color-shadow, 30% );
+
+/* ----- Font-family ----- */
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+$fontFamily-logo: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+$fontFamily-headline: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+$fontFamily-body: Georgia, serif;
+$fontFamily-system: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+
+/* ----- Font-size ----- */
+
+$fontSize-display: 64px;
+
+$fontSize-title: 48px;
+$fontSize-subtitle: 28px;
+$fontSize-body-copy: 18px;
+
+$fontSize-xxxlarge: 60px;
+$fontSize-xxlarge: 32px;
+$fontSize-xlarge: 26px;
+$fontSize-large: 20px;
+$fontSize-base: 16px;
+$fontSize-small: 14px;
+$fontSize-xsmall: 12px;
+$fontSize-xxsmall: 11px;
+
+/* ----- Font-weight ----- */
+
+$fontWeight-black: 900;
+$fontWeight-heavy: 800;
+$fontWeight-bold: 700;
+$fontWeight-semibold: 600;
+$fontWeight-medium: 500;
+$fontWeight-normal: 400;
+$fontWeight-book: 300;
+$fontWeight-light: 200;
+$fontWeight-thin: 100;
+
+/* ----- Line-height ----- */
+
+$lineHeight: 1.3;
+
+/* ----- Border-radius ----- */
+
+$borderRadius: 2px;

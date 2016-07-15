@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           transform: [['babelify', { 'sourceType': 'module' }]]
         },
         files: {
-          'themes/relibond/js/bundle.js': 'themes/relibond/dev/js/*.js'
+          'themes/relibond/js/bundle.js': 'themes/relibond/dev/js/**/*.js'
         }
       }
     },

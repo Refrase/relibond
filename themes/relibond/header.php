@@ -23,45 +23,24 @@
 
     <!--//////////////////// Navigation \\\\\\\\\\\\\\\\\\\\-->
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#intro"><?php bloginfo('name'); ?></a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="nav-main">
+      <div class="nav-trigger">
+        Menu
+      </div>
 
-            <?php
-              $defaults = array(
-                'menu'            => 'Hovedmenu',
-                'theme_location'  => 'Hovedmenu',
-                'depth'           => 2,
-                // 'container'       => 'div',
-                // 'container_class' => 'collapse navbar-collapse',
-                // 'container_id'    => 'nav-main',
-                'menu_class'      => 'nav navbar-nav',
-                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                'walker'          => new wp_bootstrap_navwalker()
-              );
-              wp_nav_menu( $defaults );
-            ?>
+      <?php
+        $defaults = array(
+          'menu'            => 'Hovedmenu',
+          'theme_location'  => 'Hovedmenu',
+          'depth'           => 2,
+          // 'container'       => 'div',
+          'container_class' => 'nav-wrap',
+          // 'container_id'    => 'nav-main',
+          'menu_class'      => 'nav',
+          'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+          'walker'          => new wp_bootstrap_navwalker()
+        );
+        wp_nav_menu( $defaults );
+      ?>
 
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a class="pf-link" href="http://www.andreasreffstrup.com">
-                  Navbar right
-                </a>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
     </header>
