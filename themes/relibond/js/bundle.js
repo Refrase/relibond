@@ -10085,16 +10085,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(document).ready(function ($) {
 
-  // Opdatér aktivt link i nav med .active state
-  $('.nav a').on('click', function () {
-    $('.nav').find('.active').removeClass('active');
-    $(this).addClass('active');
-  });
-
-  // Fjern aktivt stadie for links ved tryk på 'Relibond'
-  $('.navbar-brand').on('click', function () {
-    $('.nav').find('.active').removeClass('active');
-  });
+  var tablet = 768;
 
   // Animér scroll til #-link
   $(function () {
@@ -10112,19 +10103,52 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     });
   });
 
-  // Luk dropdown responsive nav, når der trykkes på link
-  $('.navbar-nav a').click(function () {
-    var navbarToggle = $('.navbar-toggle');
-    if (navbarToggle.is(':visible')) {
-      navbarToggle.trigger('click');
+  // Opdatér aktivt link i nav med .active state
+  $('.nav a').on('click', function () {
+    $('.nav').find('.active').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  // Fjern aktivt stadie for links ved tryk på 'Relibond'
+  $('.navbar-brand').on('click', function () {
+    $('.nav').find('.active').removeClass('active');
+  });
+
+  var showMobileMenu = function showMobileMenu() {
+    console.log('show');
+    $('.nav, .nav_close').removeClass('nav-hidden');
+    $('.nav, .nav_close').addClass('nav-shown');
+  };
+
+  var hideMobileMenu = function hideMobileMenu() {
+    console.log('hide');
+    $('.nav, .nav_close').removeClass('nav-shown');
+    $('.nav, .nav_close').addClass('nav-hidden');
+  };
+
+  // Luk mobilmenu, når der trykkes på link, menuen selv eller knappen til luk
+  $('.nav, .nav li a, .nav_close').on('click', function () {
+    if ($(window).width() <= tablet) {
+      hideMobileMenu();
     }
   });
-  // ... og når man klikker udenfor dropdown-menuen
-  $(document).on('click', function () {
-    var navbarToggle = $('.navbar-toggle');
-    if (navbarToggle.is(':visible')) {
-      $('.collapse').collapse('hide');
+
+  // Vis mobilmenu ved klik på knak til det
+  $('.nav_open').on('click', function () {
+    if ($(window).width() <= tablet) {
+      showMobileMenu();
     }
+  });
+
+  // Vis/gem mobil hhv. desktopmenu v. resize
+  $(window).on('resize', function () {
+    setTimeout(function () {
+      if ($(window).width() > tablet) {
+        showMobileMenu();
+      } else {
+        hideMobileMenu();
+      }
+    }, 1000);
   });
 });
 

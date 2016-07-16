@@ -24,9 +24,8 @@
     <!--//////////////////// Navigation \\\\\\\\\\\\\\\\\\\\-->
     <header>
 
-      <div class="nav-trigger">
-        Menu
-      </div>
+      <div class="nav_open">Menu</div>
+      <div class="nav_close">Close</div>
 
       <?php
         $defaults = array(

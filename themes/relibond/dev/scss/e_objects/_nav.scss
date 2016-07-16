@@ -2,37 +2,76 @@
 
 @import '../a_settings/_animations';
 
+%navLink {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $fontFamily-headline;
+  font-weight: $fontWeight-bold;
+  transition: all 0.3s ease-out;
+  letter-spacing: 0.8px;
+}
+
 .nav {
   list-style: none;
   display: flex;
   justify-content: space-around;
   box-shadow: 0px 0px 32px -2px rgba($color-shadow-darker-3, 0.25);
   line-height: 47px;
+  background: rgba(white, 0.97);
+
+  @include breakpoint( 'tablet' ) {
+    transform: translateY(-100vh);
+    position: fixed;
+    bottom: $scale-1-2;
+    left: $scale-1-2;
+    width: calc(100vw - #{$scale});
+    height: calc(100vh - #{$scale});
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-hidden { animation: fadeOutHide 0.6s ease-in forwards; }
+  &-shown { animation: fadeInShow 0.6s ease-out forwards; }
+
+  &_open,
+  &_close {
+    @extend %navLink;
+
+    display: none;
+    cursor: pointer;
+
+    @include breakpoint( 'tablet' ) {
+      display: block;
+      position: fixed;
+      bottom: $scale;
+      left: $scale + 6px;
+    }
+  }
+
+  &_close { z-index: 1002; transform: translateY(-100vh); }
 
   li {
     border-right: 1px solid $color-brandWhite;
     position: relative;
     width: 100%;
 
+    @include breakpoint( 'tablet' ) {
+      border-right: none;
+    }
+
     &:last-child {
       border-right: none;
     }
 
-    a {
-      display: block;
-      padding: 14px;
+    a, .nav_open, .nav_close {
+      @extend %navLink;
+
       text-align: center;
       width: 100%;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-family: $fontFamily-headline;
-      font-weight: $fontWeight-bold;
-      transition: all 0.3s ease-out;
-      letter-spacing: 0.8px;
+      padding: 14px;
 
-      &:hover {
-        background: #f7f7f7;
-      }
+      &:hover { background: #f7f7f7; }
 
       &.active {
 
