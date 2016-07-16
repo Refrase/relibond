@@ -32,6 +32,14 @@
 
     }
 
+  } @else if $class == 'tablet-above' {
+
+    @media (min-width: 769px) {
+
+      @content;
+
+    }
+
   } @else if $class == 'desktop' {
 
     @media (max-width: 1024px) {

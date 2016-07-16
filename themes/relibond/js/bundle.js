@@ -10089,12 +10089,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   // Animér scroll til #-link
   $(function () {
-    $('a[href*=#]:not([href=#])').click(function () {
-      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+    $('a[href*="#"]:not([href="#"])').click(function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
-          $('html,body').animate({
+          $('html, body').animate({
             scrollTop: target.offset().top
           }, 1000);
           return false;
@@ -10149,6 +10149,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         hideMobileMenu();
       }
     }, 1000);
+  });
+
+  // Fuldskærmsvideo
+  $(function () {
+    $('#welcome_video').css({
+      width: $(window).innerWidth() + 'px',
+      height: $(window).innerWidth() * 0.56 + 'px'
+    });
+
+    // Behold fuld skærm ved ændring af vinduestr.
+    $(window).resize(function () {
+      $('#welcome_video').css({
+        width: $(window).innerWidth() + 'px',
+        height: $(window).innerWidth() * 0.56 + 'px'
+      });
+    });
   });
 });
 

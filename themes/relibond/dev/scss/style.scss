@@ -29,6 +29,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 // Objects: Dele af siden
 @import "./e_objects/_nav";
+@import "./e_objects/_welcome";
 
 // Components: Specifikke dele af elementer
 
@@ -36,12 +37,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* ----- Main ----- */
 
-html {
-	overflow-x: hidden; }
-
-body {
-	overflow: hidden;
-  overflow-y: auto; }
+html { overflow-x: hidden; }
 
 .browserupgrade {
   margin: 0.2em 0;

@@ -10,15 +10,19 @@
   font-weight: $fontWeight-bold;
   transition: all 0.3s ease-out;
   letter-spacing: 0.8px;
+  padding: 14px;
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
   box-shadow: 0px 0px 32px -2px rgba($color-shadow-darker-3, 0.25);
   line-height: 47px;
-  background: rgba(white, 0.97);
+  background: rgba(white, 0.99);
+  z-index: 1000;
 
   @include breakpoint( 'tablet' ) {
     transform: translateY(-100vh);
@@ -49,6 +53,13 @@
     }
   }
 
+  &_open {
+    background: rgba(white, 0.99);
+    border: 1px solid $color-brandWhite;
+
+    &:hover { background: #f7f7f7; }
+
+  }
   &_close { z-index: 1002; transform: translateY(-100vh); }
 
   li {
@@ -69,7 +80,6 @@
 
       text-align: center;
       width: 100%;
-      padding: 14px;
 
       &:hover { background: #f7f7f7; }
 

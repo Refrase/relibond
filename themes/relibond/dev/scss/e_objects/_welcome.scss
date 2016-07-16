@@ -1,0 +1,23 @@
+/* ----- Page: Welcome ----- */
+
+.page {
+
+  &-welcome {
+
+    &_video_wrap {
+      height: 600px;
+      overflow: hidden;
+    }
+
+    &_title {
+      position: absolute;
+      color: white;
+      top: 100px;
+      left: 50%;
+      transform: translateX( -50% );
+      text-align: center;
+    }
+
+  }
+
+}

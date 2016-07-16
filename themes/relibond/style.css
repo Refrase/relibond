@@ -1554,15 +1554,19 @@ p, a {
   font-weight: 700;
   transition: all 0.3s ease-out;
   letter-spacing: 0.8px;
+  padding: 14px;
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
   box-shadow: 0px 0px 32px -2px rgba(97, 97, 118, 0.25);
   line-height: 47px;
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(255, 255, 255, 0.99);
+  z-index: 1000;
 }
 
 @media (max-width: 768px) {
@@ -1600,6 +1604,15 @@ p, a {
   }
 }
 
+.nav_open {
+  background: rgba(255, 255, 255, 0.99);
+  border: 1px solid #ececec;
+}
+
+.nav_open:hover {
+  background: #f7f7f7;
+}
+
 .nav_close {
   z-index: 1002;
   transform: translateY(-100vh);
@@ -1624,7 +1637,6 @@ p, a {
 .nav li a, .nav li .nav_open, .nav li .nav_close {
   text-align: center;
   width: 100%;
-  padding: 14px;
 }
 
 .nav li a:hover, .nav li .nav_open:hover, .nav li .nav_close:hover {
@@ -1651,14 +1663,24 @@ p, a {
   animation: fadeIn 0.3s 0.1s ease-in forwards, slideInFromRight 0.6s ease-out;
 }
 
+/* ----- Page: Welcome ----- */
+.page-welcome_video_wrap {
+  height: 600px;
+  overflow: hidden;
+}
+
+.page-welcome_title {
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
 /* ----- Main ----- */
 html {
   overflow-x: hidden;
-}
-
-body {
-  overflow: hidden;
-  overflow-y: auto;
 }
 
 .browserupgrade {
