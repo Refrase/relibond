@@ -10155,14 +10155,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   $(function () {
     $('#welcome_video').css({
       width: $(window).innerWidth() + 'px',
-      height: $(window).innerWidth() * 0.56 + 'px'
+      height: $(window).innerWidth() * 0.566 + 'px'
     });
 
     // Behold fuld skærm ved ændring af vinduestr.
     $(window).resize(function () {
       $('#welcome_video').css({
         width: $(window).innerWidth() + 'px',
-        height: $(window).innerWidth() * 0.56 + 'px'
+        height: $(window).innerWidth() * 0.566 + 'px'
       });
     });
   });

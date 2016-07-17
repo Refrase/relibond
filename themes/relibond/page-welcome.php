@@ -10,19 +10,30 @@
   <div class="container-fluid">
     <article class="row">
 
-      <!-- <iframe id="welcome_video" src="https://www.youtube.com/embed/tKQNenGV4ZU" frameborder="0" allowfullscreen autoplay mute></iframe> -->
+      <div class="page-welcome_videoWithSound_wrap">
+        <iframe
+          allowfullscreen
+          frameborder="0"
+          id="welcome_videoWithSound_wrap"
+          src="https://www.youtube.com/embed/tKQNenGV4ZU"
+        ></iframe>
+      </div>
 
       <div class="page-welcome_video_wrap">
         <video
           autoPlay
+          id="welcome_video"
           loop
           muted
-          poster="<?php bloginfo('template_directory'); ?>/static/relibond-autoplay-video-poster.jpg"
+          poster="<?php bloginfo('template_directory'); ?>/static/relibond-autoplay-video-poster-2.jpg"
           src="<?php bloginfo('template_directory'); ?>/static/relibond-autoplay-video.mp4"
-          id="welcome_video" />
+        />
       </div>
 
-      <h1 class="page-welcome_title"><?php the_title(); ?></h1>
+      <h1 class="page-welcome_title">
+        <span><?php the_field( 'title-line-1' ); ?></span><br/>
+        <span><?php the_field( 'title-line-2' ); ?></span>
+      </h1>
 
     </article>
   </div>

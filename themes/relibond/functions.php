@@ -20,6 +20,11 @@
 		wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
 	} add_action( 'wp_enqueue_scripts', 'relibond_theme_styles' );
 
+	// Fonts
+	function relibond_font_styles() {
+		wp_enqueue_style( 'fonts', get_template_directory_uri() . '/fonts/fonts.css' );
+	} add_action( 'wp_enqueue_scripts', 'relibond_font_styles' );
+
 	// Scripts
 	function relibond_theme_js() {
 		wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/bundle.js', array('jquery'), '', true );

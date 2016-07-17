@@ -11,7 +11,6 @@ h4 {
 h5,
 h6 {
   font-family: $fontFamily-system;
-  font-weight: $fontWeight-medium;
 }
 
 h1 {
@@ -19,7 +18,7 @@ h1 {
   letter-spacing: 2px;
   line-height: 1.2;
 
-  @include breakpoint( 'mobileMedium' ) {
+  @include breakpoint( 'tablet' ) {
     font-size: $fontSize-xxlarge;
   }
 
@@ -32,11 +31,9 @@ h5 { font-size: $fontSize-base; }
 h6 { font-size: $fontSize-small; }
 
 p, a {
-
   color: $color-brandBlack;
   font-family: $fontFamily-body;
   font-size: $fontSize-base;
   line-height: 1.4;
   letter-spacing: 0.2px;
-
 }

@@ -82,12 +82,13 @@ $color-shadow-lighter-3: lighten( $color-shadow, 30% );
 
 /* ----- Font-family ----- */
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+$fontFamily-sansSerif: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+$fontFamily-serif: Georgia, serif;
 
-$fontFamily-logo: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
-$fontFamily-headline: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
-$fontFamily-body: Georgia, serif;
-$fontFamily-system: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+$fontFamily-logo: $fontFamily-sansSerif;
+$fontFamily-headline: $fontFamily-sansSerif;
+$fontFamily-body: $fontFamily-sansSerif;
+$fontFamily-system: $fontFamily-sansSerif;
 
 /* ----- Font-size ----- */
 
