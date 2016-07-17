@@ -22,6 +22,12 @@
 	100% 	{ opacity: 0; transform: translateY(-100vh); }
 }
 
+@keyframes fadeOutRemove {
+	0% 		{ opacity: 1; transform: translateY(0vh); }
+	99% 	{ transform: translateY(0vh); }
+	100% 	{ opacity: 0; transform: translateY(-100vh); }
+}
+
 @keyframes fadeOutAndRemove {
 	0% 		{ opacity: 1; height: 100vh; }
 	99%		{ height: 100vh; }

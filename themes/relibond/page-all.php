@@ -5,6 +5,10 @@
 
 get_header(); ?>
 
+  <div class="splash">
+    <img class="splash_logo" src="<?php bloginfo('template_directory'); ?>/static/logo.svg">
+  </div>
+
   <!-- Fetch pages, ascending -->
   <?php $args = array( 'post_type' => 'page', 'order' => 'ASC' );
         $the_query = new WP_Query( $args ); ?>
