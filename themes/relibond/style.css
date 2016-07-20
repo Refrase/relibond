@@ -1434,6 +1434,17 @@ p, a {
   }
 }
 
+@keyframes fadeInAndUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -1570,6 +1581,15 @@ p, a {
   padding: 14px;
 }
 
+@keyframes slideDownNav {
+  0% {
+    transform: translate3d(0, -44px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -1580,6 +1600,8 @@ p, a {
   line-height: 47px;
   background: rgba(255, 255, 255, 0.99);
   z-index: 1000;
+  transform: translateY(-44px);
+  animation: slideDownNav 0.3s 2s ease-out forwards;
 }
 
 @media (max-width: 768px) {
@@ -1592,6 +1614,7 @@ p, a {
     height: calc(100vh - 16px);
     flex-direction: column;
     justify-content: center;
+    animation: none;
   }
 }
 
@@ -1677,24 +1700,6 @@ p, a {
 }
 
 /* ----- Page: Welcome ----- */
-.splash {
-  width: 100vw;
-  height: 100vh;
-  z-index: 10000;
-  background: rgba(255, 255, 255, 0.97);
-  position: absolute;
-  animation: fadeOutRemove 0.6s 1.2s cubic-bezier(0.1, 0.95, 0.65, 1) forwards;
-  display: flex;
-  justify-content: center;
-}
-
-.splash_logo {
-  opacity: 0;
-  width: 240px;
-  animation: fadeIn 0.6s ease-in forwards;
-  transform: translateY(-80px);
-}
-
 .page-welcome_videoWithSound_wrap {
   display: none;
 }
@@ -1728,6 +1733,11 @@ p, a {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+
+.page-welcome_title_inner {
+  opacity: 0;
+  animation: fadeInAndUp 1.2s ease-out forwards;
 }
 
 @media (max-width: 1024px) {

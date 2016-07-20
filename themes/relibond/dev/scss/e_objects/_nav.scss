@@ -13,6 +13,11 @@
   padding: 14px;
 }
 
+@keyframes slideDownNav {
+	0% 		{ transform: translate3d(0, -44px, 0); }
+	100% 	{ transform: translate3d(0, 0, 0); }
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -23,6 +28,8 @@
   line-height: 47px;
   background: rgba(white, 0.99);
   z-index: 1000;
+  transform: translateY( -44px );
+  animation: slideDownNav 0.3s 2s ease-out forwards;
 
   @include breakpoint( 'tablet' ) {
     transform: translateY(-100vh);
@@ -33,6 +40,7 @@
     height: calc(100vh - #{$scale});
     flex-direction: column;
     justify-content: center;
+    animation: none;
   }
 
   &-hidden { animation: fadeOutHide 0.6s ease-in forwards; }
