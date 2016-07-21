@@ -1,0 +1,6 @@
+.container {
+  @include breakpoint( 'mobile' ) {
+    padding-right: $scale-2-1;
+    padding-left: $scale-2-1;
+  }
+}

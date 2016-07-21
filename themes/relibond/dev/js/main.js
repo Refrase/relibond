@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import inViewport from 'in-viewport';
 
 $(document).ready(function($) {
 
@@ -20,46 +21,78 @@ $(document).ready(function($) {
     });
   });
 
+  // Fix menu ved scroll over bestemt punkt
+  // $( window ).on( 'scroll', () => {
+  //   setTimeout( () => {
+  //     const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
+  //     if ( $( window ).scrollTop() > 500 && !hasFixedClass ) {
+  //       $( '.nav' ).removeClass( 'nav-shown' ); // Might have been put on through window resize (see function below)
+  //       $( '.nav' ).addClass( 'nav-fixed' );
+  //     } else if (  ) {
+  //       $( '.nav' ).removeClass( 'nav-fixed' );
+  //     }
+  //   }, 300);
+  // });
+
+  // Fix menu ved scroll opad
+  let scrollTop = 0;
+  $( window ).on( 'scroll', () => {
+    setTimeout( () => {
+      const newScrollTop = $( window ).scrollTop();
+      const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
+      if ( newScrollTop < scrollTop && !hasFixedClass ) {
+        $( '.nav' ).removeClass( 'nav-shown' ); // Might have been put on through window resize (see function below)
+        $( '.nav_open' ).removeClass( 'open' );
+        $( '.nav' ).removeClass( 'nav-hideAfterFixed' );
+        $( '.nav' ).addClass( 'nav-fixed' );
+        $( '.nav_open' ).addClass();
+      } else if ( newScrollTop > scrollTop ) {
+        $( '.nav' ).removeClass( 'nav-fixed' );
+        $( '.nav' ).addClass( 'nav-hideAfterFixed' );
+      }
+      scrollTop = $( window ).scrollTop();
+    }, 50);
+  });
+
   // Opdatér aktivt link i nav med .active state
   $( '.nav a' ).on( 'click', function() {
     $( '.nav' ).find( '.active' ).removeClass( 'active' );
     $(this).addClass( 'active' );
   });
 
-  // Fjern aktivt stadie for links ved tryk på 'Relibond'
-  $( '.navbar-brand' ).on( 'click', function() {
-    $( '.nav' ).find( '.active' ).removeClass( 'active' );
-  });
-
   const showMobileMenu = () => {
-    console.log('show');
-    $( '.nav, .nav_close' ).removeClass( 'nav-hidden' );
-    $( '.nav, .nav_close' ).addClass( 'nav-shown' );
+    $( '.nav' ).removeClass( 'nav-hidden' );
+    $( '.nav' ).addClass( 'nav-shown' );
   };
 
   const hideMobileMenu = () => {
-    console.log('hide');
-    $( '.nav, .nav_close' ).removeClass( 'nav-shown' );
-    $( '.nav, .nav_close' ).addClass( 'nav-hidden' );
+    $( '.nav' ).removeClass( 'nav-shown' );
+    $( '.nav' ).addClass( 'nav-hidden' );
+  };
+
+  const toggleMobileMenu = () => {
+    $( '.nav' ).toggleClass( 'nav-shown' );
+    $( '.nav' ).toggleClass( 'nav-hidden' );
   };
 
   // Luk mobilmenu, når der trykkes på link, menuen selv eller knappen til luk
-  $( '.nav, .nav li a, .nav_close' ).on( 'click', () => {
+  $( '.nav, .nav li a' ).on( 'click', () => {
     if ( $( window ).width() <= tablet ) {
+      $( '.nav_open' ).toggleClass( 'open' );
       hideMobileMenu();
     }
   });
 
-  // Vis mobilmenu ved klik på knak til det
+  // Burger/kryds-animation + vis mobilmenu ved klik på knak til det
   $( '.nav_open' ).on( 'click', () => {
-    if ( $( window ).width() <= tablet ) {
-      showMobileMenu();
-    }
+      $( '.nav_open' ).toggleClass( 'open' );
+      toggleMobileMenu();
   });
 
   // Vis/gem mobil hhv. desktopmenu v. resize
   $( window ).on( 'resize', () => {
     setTimeout( () => {
+      $( '.nav_open' ).removeClass( 'open' );
       if ( $( window ).width() > tablet ) {
         showMobileMenu();
       } else {
@@ -83,5 +116,21 @@ $(document).ready(function($) {
 	    });
 	  });
 	});
+
+  // Lazyload advantages
+  const fadeInAndUpIfInViewport = ( elem ) => {
+    $( window ).on( 'scroll', () => {
+      setTimeout( () => {
+        const advantage = document.getElementById( elem );
+        const advantageInViewport = inViewport( advantage, { offset: -300 } );
+        if ( advantageInViewport ) {
+          $( '#' + elem ).addClass( 'fadeInAndUp' );
+        }
+      }, 100);
+    });
+  }
+  fadeInAndUpIfInViewport( 'page-technology_advantage-1' );
+  fadeInAndUpIfInViewport( 'page-technology_advantage-2' );
+  fadeInAndUpIfInViewport( 'page-technology_advantage-3' );
 
 });

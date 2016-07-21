@@ -19,6 +19,10 @@ get_header(); ?>
     <?php if ( $post->post_name === 'welcome' ) { ?>
       <?php get_template_part( 'page', 'welcome' ); ?>
     <?php } ?>
+    
+    <?php if ( $post->post_name === 'technology' ) { ?>
+      <?php get_template_part( 'page', 'technology' ); ?>
+    <?php } ?>
 
   <?php endwhile; endif; wp_reset_postdata(); ?>
 

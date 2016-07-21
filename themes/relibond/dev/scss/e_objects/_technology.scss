@@ -1,0 +1,148 @@
+/* ----- Page: Technology ----- */
+
+.page {
+
+  &-technology {
+    // background-image: url('http://api.thumbr.it/whitenoise-361x370.png?noise=626262&density=76&opacity=5');
+    background-color: rgba($color-brandSecond, 0.15);
+    // background-blend-mode: multiply;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      background-image: url('static/vandmaerke-kabel-tvaersnit.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.03;
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      top: -300px;
+      right: 10%;
+
+      @include breakpoint( 'desktop' ) { right: -20%; top: -350px; }
+      @include breakpoint( 'tablet' ) { right: -50%; top: -400px; }
+    }
+
+    &_title {
+
+      & span {
+
+        &:last-child {
+          font-weight: 200;
+        }
+
+      }
+
+    }
+
+    &_image {
+
+      &-1 {
+        position: absolute;
+        left: -300px;
+        width: 400px;
+      }
+
+    }
+
+    &_advantage {
+      opacity: 0;
+
+      &-1 {
+
+        &_title {
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 1000px;
+            height: 4px;
+            background: $color-brandSecond;
+            left: -1010px;
+            transform: rotate(20deg);
+            transform-origin: center right;
+
+            @include breakpoint( 'mobile' ) { left: -1000px; }
+          }
+
+          &:after {
+            content: '';
+            background: url('static/illustration-01-fritlagt.png') no-repeat;
+            background-size: contain;
+            width: 500px;
+            min-height: 200px;
+            position: absolute;
+            bottom: -200px;
+            left: -240px;
+
+            @include breakpoint( 'tablet' ) { width: 360px; }
+            @include breakpoint( 'mobile' ) { background: none; }
+          }
+
+        }
+
+      }
+
+      &-2 {
+
+        &_title {
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 1000px;
+            height: 4px;
+            background: $color-brandFirst;
+            right: -910px;
+            transform: rotate(-20deg);
+            transform-origin: center left;
+
+            @include breakpoint( 'mobile' ) { left: 310px; }
+          }
+
+          &:after {
+            content: '';
+            background: url('static/illustration-02-fritlagt.png') no-repeat;
+            background-size: contain;
+            width: 500px;
+            min-height: 200px;
+            position: absolute;
+            bottom: -260px;
+            right: -180px;
+
+            @include breakpoint( 'desktop' ) { right: -300px; }
+            @include breakpoint( 'tablet' ) { width: 360px; right: -240px; }
+            @include breakpoint( 'mobile' ) { background: none; }
+          }
+
+        }
+
+      }
+
+
+      &-3 {
+
+        &_text {
+
+          &:before {
+            content: '';
+            position: absolute;
+            height: 100px;
+            width: 4px;
+            background: black;
+            bottom: -130px;
+
+            @include breakpoint( 'mobile' ) { bottom: -55px; height: 40px; }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

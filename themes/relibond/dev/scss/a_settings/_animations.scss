@@ -6,7 +6,7 @@
 }
 
 @keyframes fadeInAndUp {
-	0% 		{ opacity: 0; transform: translate3d(0, -20px, 0); }
+	0% 		{ opacity: 0; transform: translate3d(0, 20px, 0); }
 	100% 	{ opacity: 1; transform: translate3d(0, 0, 0); }
 }
 
@@ -16,7 +16,7 @@
 }
 
 @keyframes fadeInShow {
-	0% 		{ opacity: 0; transform: translateY(-100vh); }
+	0% 		{ opacity: 0; transform: translateY(100vh); }
 	20% 	{ opacity: 1; }
 	100% 	{ opacity: 1; transform: translateY(0vh); }
 }
@@ -24,7 +24,7 @@
 @keyframes fadeOutHide {
 	0% 		{ opacity: 1; transform: translateY(0vh); }
 	80% 	{ opacity: 1; }
-	100% 	{ opacity: 0; transform: translateY(-100vh); }
+	100% 	{ opacity: 0; transform: translateY(100vh); }
 }
 
 @keyframes fadeOutRemove {

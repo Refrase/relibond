@@ -4,6 +4,11 @@ $grid-float-breakpoint: 798px; // Point for the navbar to put links into collaps
 
 $scale: 16px;
 
+$scale-10-1: $scale * 10;
+$scale-9-1: $scale * 9;
+$scale-8-1: $scale * 8;
+$scale-7-1: $scale * 7;
+$scale-6-1: $scale * 6;
 $scale-5-1: $scale * 5;
 $scale-4-1: $scale * 4;
 $scale-3-1: $scale * 3;
@@ -94,18 +99,18 @@ $fontFamily-system: $fontFamily-sansSerif;
 
 $fontSize-display: 64px;
 
-$fontSize-title: 48px;
+$fontSize-title: 42px;
 $fontSize-subtitle: 28px;
 $fontSize-body-copy: 18px;
 
-$fontSize-xxxlarge: 60px;
+$fontSize-xxxlarge: 48px;
 $fontSize-xxlarge: 32px;
 $fontSize-xlarge: 26px;
-$fontSize-large: 20px;
-$fontSize-base: 16px;
-$fontSize-small: 14px;
-$fontSize-xsmall: 12px;
-$fontSize-xxsmall: 11px;
+$fontSize-large: 18px;
+$fontSize-base: 14px;
+$fontSize-small: 12px;
+$fontSize-xsmall: 11px;
+$fontSize-xxsmall: 10px;
 
 /* ----- Font-weight ----- */
 
@@ -130,3 +135,18 @@ $borderRadius: 2px;
 /* ----- Animation ----- */
 
 $animationBezier: cubic-bezier(0.1, 0.95, 0.65, 1);
+
+/* ----- Breakpoint ----- */
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+/* ----- Container max-widths ----- */
+
+$container-maxWidth-sm: $breakpoint-sm - $scale-2-1;
+$container-maxWidth-md: $breakpoint-md - $scale-6-1;
+$container-maxWidth-lg: $breakpoint-lg - 200;
+$container-maxWidth-xl: $breakpoint-xl - 360;

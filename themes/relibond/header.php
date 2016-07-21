@@ -24,8 +24,15 @@
     <!--//////////////////// Navigation \\\\\\\\\\\\\\\\\\\\-->
     <header>
 
-      <div class="nav_open">Menu</div>
-      <div class="nav_close">Close</div>
+      <div class="nav_open">
+        <div class="nav_open_inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="container">
 
       <?php
         $defaults = array(
@@ -35,11 +42,13 @@
           // 'container'       => 'div',
           'container_class' => 'nav-wrap',
           // 'container_id'    => 'nav-main',
-          'menu_class'      => 'nav',
+          'menu_class'      => 'nav nav-hidden',
           'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
           'walker'          => new wp_bootstrap_navwalker()
         );
         wp_nav_menu( $defaults );
       ?>
+
+      </div>
 
     </header>

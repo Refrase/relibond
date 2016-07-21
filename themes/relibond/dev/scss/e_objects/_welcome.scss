@@ -65,14 +65,37 @@
         white-space: nowrap;
 
         &:first-child {
-          font-weight: 100;
+          font-weight: 200;
         }
 
         &:last-child {
           display: block;
-          transform: translateY(8px);
+          transform: translateY(12px);
         }
 
+      }
+
+    }
+
+    &_introduction {
+
+      &_inner {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint( 'mobile' ) {
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      &_logo {
+        max-width: 120px;
+
+        @include breakpoint( 'mobile' ) {
+          margin: $scale-2-1 auto;
+          display: block;
+        }
       }
 
     }

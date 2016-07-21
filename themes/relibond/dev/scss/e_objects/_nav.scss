@@ -8,9 +8,8 @@
   font-size: 12px;
   font-family: $fontFamily-system;
   font-weight: $fontWeight-bold;
-  transition: all 0.3s ease-out;
+  transition: all 0.15s ease-out;
   letter-spacing: 0.8px;
-  padding: 14px;
 }
 
 @keyframes slideDownNav {
@@ -18,57 +17,172 @@
 	100% 	{ transform: translate3d(0, 0, 0); }
 }
 
+@keyframes slideUpNav {
+	0% 		{ transform: translate3d(0, 0, 0); }
+	100% 	{ transform: translate3d(0, -44px, 0); }
+}
+
+@keyframes slideDownNavAndFix {
+	0% 		{ transform: translate3d(0, -44px, 0); }
+	100% 	{ transform: translate3d(0, 0, 0); position: fixed; }
+}
+
 .nav {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  width: $container-maxWidth-lg;
+  list-style-position: inside;
   list-style: none;
   display: flex;
   justify-content: space-around;
-  box-shadow: 0px 0px 32px -2px rgba($color-shadow-darker-3, 0.25);
+  box-shadow: 0px 0px 32px -2px rgba($color-shadow-darker-3, 0.45);
   line-height: 47px;
   background: rgba(white, 0.99);
   z-index: 1000;
-  transform: translateY( -44px );
-  animation: slideDownNav 0.3s 2s ease-out forwards;
+  transform: translateY( -100vh );
+  animation: slideDownNav 0.3s 1.2s ease-out forwards;
+  transition: all 0.3s ease-out;
+
+  @include breakpoint( 'desktop' ) { width: $container-maxWidth-md; }
 
   @include breakpoint( 'tablet' ) {
-    transform: translateY(-100vh);
+    transform: translateY(100vh);
     position: fixed;
-    bottom: $scale-1-2;
-    left: $scale-1-2;
-    width: calc(100vw - #{$scale});
-    height: calc(100vh - #{$scale});
+    border: 1px solid $color-brandWhite;
+    bottom: 78px;
+    left: $scale;
+    width: calc(100vw - #{$scale-2-1} - 15px);
     flex-direction: column;
     justify-content: center;
     animation: none;
+    box-shadow: 0px 0px 40px rgba($color-brandSecond-darker-3, 0.3);
   }
 
-  &-hidden { animation: fadeOutHide 0.6s ease-in forwards; }
-  &-shown { animation: fadeInShow 0.6s ease-out forwards; }
+  &-fixed {
+    animation: slideDownNavAndFix 0.3s ease-out forwards;
 
-  &_open,
-  &_close {
-    @extend %navLink;
+    @include breakpoint( 'tablet' ) { animation: none; }
+  }
 
-    display: none;
-    cursor: pointer;
+  &-hideAfterFixed {
+    position: fixed;
+    transform: translate3d(0, 0, 0);
+    animation: slideUpNav 0.6s 1s ease-out forwards;
 
+    @include breakpoint( 'tablet' ) { animation: none; }
+  }
+
+  @keyframes fadeInShowNavMobile {
+  	0% 		{ opacity: 0; transform: translateY(20px); }
+  	100% 	{ opacity: 1; transform: translateY(0vh); }
+  }
+
+  @keyframes fadeOutHideNavMobile {
+  	0% 		{ opacity: 1; transform: translateY(0px); }
+  	99% 	{ opacity: 0; transform: translateY(20px); }
+  	100% 	{ opacity: 0; transform: translateY(100vh); }
+  }
+
+  @keyframes hideNavMobile {
+    0% 		{ transform: translateY(0px); }
+    99% 	{ transform: translateY(20px); }
+    100% 	{ transform: translateY(100vh); }
+  }
+
+  &-hidden {
     @include breakpoint( 'tablet' ) {
-      display: block;
-      position: fixed;
-      bottom: $scale;
-      left: $scale + 6px;
+      opacity: 1;
+      transform: translateY(0px);
+      animation: fadeOut 0.3s 0.25s ease-in, hideNavMobile 0.55s ease-in forwards;
     }
   }
+  &-shown { animation: fadeInShowNavMobile 0.3s ease-out forwards; }
 
   &_open {
-    background: rgba(white, 0.99);
-    border: 1px solid $color-brandWhite;
+    display: none;
 
-    &:hover { background: #f7f7f7; }
+    @include breakpoint( 'tablet' ) {
+      display: flex;
+      justify-content: center;
+      padding: 13px 10px;
+      position: fixed;
+      transform: rotate(0deg);
+      cursor: pointer;
+      bottom: $scale;
+      left: $scale;
+      z-index: 1001;
+      cursor: pointer;
+      background: rgba(white, 0.99);
+      border: 1px solid $color-brandWhite;
+      box-shadow: 0px 0px 20px rgba($color-brandSecond-darker-3, 0.3);
+      transition: 0.15s ease-out;
+    }
 
+    &:hover {
+      background: #f7f7f7;
+      box-shadow: 0px 0px 30px rgba($color-brandSecond-darker-3, 0.5);
+    }
+
+    &:active { box-shadow: 0px 0px 10px rgba($color-brandSecond-darker-3, 0.2); }
+
+    &_inner {
+      position: relative;
+      display: block;
+      width: 28px;
+      height: 21px;
+      pointer-events: none;
+    }
+
+    & span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 28px;
+      background: black;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+        transform-origin: left center;
+      }
+    }
+
+    &.open {
+
+      & span {
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: -1px;
+          left: 4px;
+        }
+
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 19px;
+          left: 4px;
+        }
+
+      }
+    }
   }
-  &_close { z-index: 1002; transform: translateY(-100vh); }
 
   li {
     border-right: 1px solid $color-brandWhite;
@@ -88,6 +202,7 @@
 
       text-align: center;
       width: 100%;
+      padding: 14px;
 
       &:hover { background: #f7f7f7; }
 

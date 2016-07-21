@@ -1,0 +1,90 @@
+.padding {
+
+  &-top {
+    padding-top: $scale;
+
+    &-2-1 { padding-top: $scale-2-1; }
+    &-3-1 { padding-top: $scale-3-1; }
+    &-4-1 { padding-top: $scale-4-1; }
+    &-5-1 { padding-top: $scale-5-1; }
+
+    @include breakpoint( 'mobile' ) {
+      padding-top: $scale-2-1;
+    }
+
+  }
+
+  &-topBottom {
+    padding-top: $scale; padding-bottom: $scale;
+
+    // Intentionally both rules to avoid overwriting of eg. Bootstrap styles
+    &-2-1 { padding-top: $scale-2-1; padding-bottom: $scale-2-1; }
+    &-3-1 { padding-top: $scale-3-1; padding-bottom: $scale-3-1; }
+    &-4-1 { padding-top: $scale-4-1; padding-bottom: $scale-4-1; }
+    &-5-1 { padding-top: $scale-5-1; padding-bottom: $scale-5-1; }
+    &-6-1 { padding-top: $scale-6-1; padding-bottom: $scale-6-1; }
+
+    @include breakpoint( 'mobile' ) {
+      padding-top: $scale-2-1; padding-bottom: $scale-2-1;
+    }
+
+  }
+
+}
+
+.margin {
+
+  &-top {
+    margin-top: $scale;
+
+    &-2-1 { margin-top: $scale-2-1; }
+    &-3-1 { margin-top: $scale-3-1; }
+    &-4-1 { margin-top: $scale-4-1; }
+    &-5-1 { margin-top: $scale-5-1; }
+    &-6-1 { margin-top: $scale-6-1; }
+    &-7-1 { margin-top: $scale-7-1; }
+    &-8-1 { margin-top: $scale-8-1; }
+    &-9-1 { margin-top: $scale-9-1; }
+    &-10-1 { margin-top: $scale-10-1; }
+
+    @include breakpoint( 'mobile' ) {
+      margin-top: $scale-2-1;
+    }
+
+  }
+
+}
+
+.textAlign {
+
+  &-center {
+    text-align: center;
+  }
+
+}
+
+.color {
+
+  &-brandFirst { color: $color-brandFirst; }
+  &-brandSecond { color: $color-brandSecond; }
+
+}
+
+.img {
+
+  &-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    @include breakpoint( 'widescreen' ) {
+      max-width: auto;
+      width: 100%;
+    }
+  }
+
+}
+
+// Animation
+
+.fadeInAndUp { animation: fadeInAndUp 3s $animationBezier forwards }

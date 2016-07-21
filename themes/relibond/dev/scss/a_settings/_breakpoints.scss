@@ -18,7 +18,7 @@
 
   } @else if $class == 'mobile' {
 
-    @media (max-width: 480px) {
+    @media (max-width: $breakpoint-sm) {
 
       @content;
 
@@ -26,7 +26,7 @@
 
   } @else if $class == 'tablet' {
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
 
       @content;
 
@@ -34,7 +34,7 @@
 
   } @else if $class == 'tablet-above' {
 
-    @media (min-width: 769px) {
+    @media (min-width: $breakpoint-md + 1) {
 
       @content;
 
@@ -42,7 +42,7 @@
 
   } @else if $class == 'desktop' {
 
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-lg) {
 
       @content;
 
@@ -50,7 +50,7 @@
 
   } @else if $class == 'widescreen' {
 
-    @media (min-width: 1025px) {
+    @media (min-width: $breakpoint-lg + 1) {
 
       @content;
 
@@ -58,7 +58,7 @@
 
   } @else if $class == 'extraWidescreen' {
 
-    @media (min-width: 1200px) {
+    @media (min-width: $breakpoint-xl) {
        @content;
     }
 
