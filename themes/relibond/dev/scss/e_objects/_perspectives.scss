@@ -1,0 +1,93 @@
+/* ----- Page: Perspectives ----- */
+
+.page {
+
+  &-perspectives {
+    position: relative;
+    overflow: hidden;
+    background: $color-brandWhite;
+    background: linear-gradient($color-brandWhite-lighter-2, $color-brandWhite);
+    border-bottom: 1px solid darken($color-brandWhite, 10%);
+
+    &:after {
+      content: '';
+      background-image: url('static/vandmaerke-europakort.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.04;
+      position: absolute;
+      width: 860px;
+      height: 900px;
+      top: -160px;
+      right: -200px;
+
+      @include breakpoint( 'desktop' ) {
+        width: 750px;
+        height: 800px;
+        right: -350px;
+        top: -350px;
+      }
+
+      @include breakpoint( 'tablet' ) {
+        width: 600px;
+        height: 650px;
+        right: -250px;
+        top: -250px;
+      }
+    }
+
+    &_text {
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1000px;
+        height: 4px;
+        background: $color-brandSecond;
+        left: -970px;
+        bottom: -150px;
+        transform: rotate(45deg);
+        transform-origin: center right;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 350px;
+        height: 4px;
+        background: $color-brandFirst;
+        left: -260px;
+        bottom: -250px;
+        transform: rotate(45deg);
+        transform-origin: center right;
+      }
+
+    }
+
+    &_video_wrap {
+      position: relative;
+      padding-bottom: 31.25%;
+      padding-top: 25px;
+      padding-right: 15px;
+      height: 0;
+      margin-top: 160px;
+      z-index: 1;
+
+      @include breakpoint( 'tablet' ) {
+        padding-bottom: 53%;
+        margin-top: $scale-2-1;
+      }
+    }
+
+    &_video {
+      position: absolute;
+    	top: 0;
+    	left: 15px;
+    	width: calc( 100% - 30px ); // Bootstrap container padding
+    	height: calc( 100% - 30px ); // Bootstrap container padding
+      box-shadow: 0px 0px 60px rgba($color-brandSecond-darker-3, 0.5);
+    }
+
+  }
+
+}

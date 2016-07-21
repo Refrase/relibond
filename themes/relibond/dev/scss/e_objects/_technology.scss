@@ -16,7 +16,7 @@
       background-image: url('static/vandmaerke-kabel-tvaersnit.gif');
       background-size: contain;
       background-repeat: no-repeat;
-      opacity: 0.03;
+      opacity: 0.04;
       position: absolute;
       width: 600px;
       height: 600px;
@@ -25,18 +25,6 @@
 
       @include breakpoint( 'desktop' ) { right: -20%; top: -350px; }
       @include breakpoint( 'tablet' ) { right: -50%; top: -400px; }
-    }
-
-    &_title {
-
-      & span {
-
-        &:last-child {
-          font-weight: 200;
-        }
-
-      }
-
     }
 
     &_image {

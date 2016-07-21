@@ -24,6 +24,14 @@
     &-5-1 { padding-top: $scale-5-1; padding-bottom: $scale-5-1; }
     &-6-1 { padding-top: $scale-6-1; padding-bottom: $scale-6-1; }
 
+    @include breakpoint( 'desktop' ) {
+      padding-top: $scale-4-1; padding-bottom: $scale-4-1;
+    }
+
+    @include breakpoint( 'tablet' ) {
+      padding-top: $scale-3-1; padding-bottom: $scale-3-1;
+    }
+
     @include breakpoint( 'mobile' ) {
       padding-top: $scale-2-1; padding-bottom: $scale-2-1;
     }

@@ -19,9 +19,21 @@ get_header(); ?>
     <?php if ( $post->post_name === 'welcome' ) { ?>
       <?php get_template_part( 'page', 'welcome' ); ?>
     <?php } ?>
-    
+
     <?php if ( $post->post_name === 'technology' ) { ?>
       <?php get_template_part( 'page', 'technology' ); ?>
+    <?php } ?>
+
+    <?php if ( $post->post_name === 'perspectives' ) { ?>
+      <?php get_template_part( 'page', 'perspectives' ); ?>
+    <?php } ?>
+
+    <?php if ( $post->post_name === 'partners' ) { ?>
+      <?php get_template_part( 'page', 'partners' ); ?>
+    <?php } ?>
+
+    <?php if ( $post->post_name === 'contactandjobs' ) { ?>
+      <?php get_template_part( 'page', 'contactandjobs' ); ?>
     <?php } ?>
 
   <?php endwhile; endif; wp_reset_postdata(); ?>

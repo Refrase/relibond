@@ -4,7 +4,7 @@
  */
 ?>
 
-<!--//////////////////// Video \\\\\\\\\\\\\\\\\\\\-->
+<!--//////////////////// Welcome \\\\\\\\\\\\\\\\\\\\-->
 
 <section id="<?php echo $post->post_name; ?>" <?php echo post_class( 'page-welcome' ); ?>>
   <article class="container-fluid">
@@ -22,7 +22,6 @@
       <div class="page-welcome_video_wrap">
         <video
           id="welcome_video"
-          autoplay
           loop
           muted
           poster="<?php bloginfo('template_directory'); ?>/static/relibond-autoplay-video-poster-2.jpg"
@@ -31,7 +30,7 @@
       </div>
 
       <h1 class="page-welcome_title">
-        <div class="page-welcome_title_inner">
+        <div class="page-welcome_title_inner title-twoWeights-lastBold">
           <span><?php the_field( 'title-line-1' ); ?></span><br/>
           <span><?php the_field( 'title-line-2' ); ?></span>
         </div>

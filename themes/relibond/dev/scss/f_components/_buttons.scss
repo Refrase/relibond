@@ -36,7 +36,7 @@
   background: $color-brandFirst;
   background: linear-gradient( $color-brandFirst-lighter-1, $color-brandFirst );
   border-color: lighten( $color-brandFirst, 8% );
-transition: all 0.15s ease-out;
+
   &:hover {
     transform: translateY( -1px );
     background: linear-gradient( $color-brandFirst, $color-brandFirst );

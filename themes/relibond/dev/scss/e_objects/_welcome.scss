@@ -64,10 +64,6 @@
         background: rgba(black, 0.8);
         white-space: nowrap;
 
-        &:first-child {
-          font-weight: 200;
-        }
-
         &:last-child {
           display: block;
           transform: translateY(12px);

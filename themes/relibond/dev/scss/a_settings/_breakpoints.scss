@@ -48,9 +48,17 @@
 
     }
 
+  } @else if $class == 'widescreen-below' {
+
+    @media (max-width: $breakpoint-xl) {
+
+      @content;
+
+    }
+
   } @else if $class == 'widescreen' {
 
-    @media (min-width: $breakpoint-lg + 1) {
+    @media (min-width: $breakpoint-xl) {
 
       @content;
 
@@ -58,7 +66,7 @@
 
   } @else if $class == 'extraWidescreen' {
 
-    @media (min-width: $breakpoint-xl) {
+    @media (min-width: 1400px) {
        @content;
     }
 
