@@ -45,8 +45,7 @@ $(document).ready(function($) {
         $( '.nav_open' ).removeClass( 'open' );
         $( '.nav' ).removeClass( 'nav-hideAfterFixed' );
         $( '.nav' ).addClass( 'nav-fixed' );
-        $( '.nav_open' ).addClass();
-      } else if ( newScrollTop > scrollTop ) {
+      } else if ( newScrollTop > scrollTop && newScrollTop > 500 ) {
         $( '.nav' ).removeClass( 'nav-fixed' );
         $( '.nav' ).addClass( 'nav-hideAfterFixed' );
       }
@@ -57,7 +56,7 @@ $(document).ready(function($) {
   // Opdatér aktivt link i nav med .active state
   $( '.nav a' ).on( 'click', function() {
     $( '.nav' ).find( '.active' ).removeClass( 'active' );
-    $(this).addClass( 'active' );
+    $( this ).addClass( 'active' );
   });
 
   const showMobileMenu = () => {
@@ -122,7 +121,7 @@ $(document).ready(function($) {
     $( window ).on( 'scroll', () => {
       setTimeout( () => {
         const advantage = document.getElementById( elem );
-        const advantageInViewport = inViewport( advantage, { offset: -300 } );
+        const advantageInViewport = inViewport( advantage, { offset: -200 } );
         if ( advantageInViewport ) {
           $( '#' + elem ).addClass( 'fadeInAndUp' );
         }

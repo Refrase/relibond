@@ -10383,8 +10383,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $('.nav_open').removeClass('open');
         $('.nav').removeClass('nav-hideAfterFixed');
         $('.nav').addClass('nav-fixed');
-        $('.nav_open').addClass();
-      } else if (newScrollTop > scrollTop) {
+      } else if (newScrollTop > scrollTop && newScrollTop > 500) {
         $('.nav').removeClass('nav-fixed');
         $('.nav').addClass('nav-hideAfterFixed');
       }
@@ -10460,7 +10459,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     $(window).on('scroll', function () {
       setTimeout(function () {
         var advantage = document.getElementById(elem);
-        var advantageInViewport = (0, _inViewport2.default)(advantage, { offset: -300 });
+        var advantageInViewport = (0, _inViewport2.default)(advantage, { offset: -200 });
         if (advantageInViewport) {
           $('#' + elem).addClass('fadeInAndUp');
         }

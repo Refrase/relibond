@@ -4,10 +4,12 @@
 
   &-technology {
     // background-image: url('http://api.thumbr.it/whitenoise-361x370.png?noise=626262&density=76&opacity=5');
-    background-color: rgba($color-brandSecond, 0.15);
+    // background-color: rgba($color-brandSecond, 0.15);
     // background-blend-mode: multiply;
     position: relative;
     overflow: hidden;
+    background: rgba($color-brandSecond, 0.15);
+    background: linear-gradient(rgba($color-brandSecond, 0.15), rgba($color-brandSecond, 0.3));
 
     &:after {
       content: '';

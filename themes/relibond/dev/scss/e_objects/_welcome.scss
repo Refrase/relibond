@@ -37,7 +37,7 @@
 
       @include breakpoint( 'desktop' ) { height: 420px; }
       @include breakpoint( 'tablet' ) { height: 240px; }
-      // @include breakpoint( 'mobileMedium' ) { height: 200px; }
+      @include breakpoint( 'mobile' ) { max-height: 180px; }
     }
 
     & video[poster] { width: 100vw; }
@@ -55,9 +55,9 @@
         animation: fadeInAndUp 1.2s ease-out forwards;
       }
 
-      @include breakpoint( 'desktop' ) { font-size: $fontSize-xxlarge; top: 160px; }
-      @include breakpoint( 'tablet' ) { top: 70px; }
-      @include breakpoint( 'mobileMedium' ) { font-size: $fontSize-xlarge; }
+      @include breakpoint( 'desktop' ) { font-size: $fontSize-xxlarge; top: 140px; }
+      @include breakpoint( 'tablet' ) { font-size: $fontSize-xlarge; top: 55px; }
+      @include breakpoint( 'mobile' ) { font-size: $fontSize-large; top: 40px; }
 
       & span {
         padding: $scale-1-2 $scale;
@@ -77,7 +77,18 @@
 
     }
 
+    &_button {
+      opacity: 0;
+      margin-top: 40px;
+      animation: fadeIn 1s 0.6s ease-out forwards;
+
+      @include breakpoint( 'tablet' ) { margin-top: 20px; }
+    }
+
     &_introduction {
+      // @include breakpoint( 'mobileMedium' ) {
+      //   margin-top: calc( 10vw * 2 );
+      // }
 
       &_inner {
         display: flex;

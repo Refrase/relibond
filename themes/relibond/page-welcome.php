@@ -35,13 +35,15 @@
           <span><?php the_field( 'title-line-1' ); ?></span><br/>
           <span><?php the_field( 'title-line-2' ); ?></span>
         </div>
+
+        <div class="page-welcome_button button button-primary">Watch the introduction</div>
       </h1>
 
     </div>
   </article>
 
-  <article class="container padding-topBottom padding-topBottom-4-1">
-    <div class="row page-welcome_introduction_inner">
+  <article class="page-welcome_introduction container padding-topBottom padding-topBottom-4-1">
+    <div class="page-welcome_introduction_inner row">
       <div class="col-sm-7">
         <p><?php the_content(); ?></p>
       </div>

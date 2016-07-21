@@ -28,7 +28,7 @@
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   width: $container-maxWidth-lg;
   list-style-position: inside;
   list-style: none;

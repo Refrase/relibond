@@ -18,20 +18,19 @@ h1 {
   letter-spacing: 2px;
   line-height: 1.1;
 
-  @include breakpoint( 'tablet' ) {
-    font-size: $fontSize-xxlarge;
-  }
-
+  @include breakpoint( 'tablet' ) { font-size: $fontSize-xxlarge; }
 }
 
 h2 {
   font-size: $fontSize-xxlarge;
   @include breakpoint( 'tablet' ) { font-size: $fontSize-xlarge; }
 }
+
 h3 {
   font-size: $fontSize-xlarge;
-  @include breakpoint( 'tablet' ) { font-size: $fontSize-large; } 
+  @include breakpoint( 'tablet' ) { font-size: $fontSize-large; }
 }
+
 h4 { font-size: $fontSize-large; }
 h5 { font-size: $fontSize-base; }
 h6 { font-size: $fontSize-small; }
