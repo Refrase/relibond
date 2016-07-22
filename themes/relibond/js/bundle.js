@@ -10454,7 +10454,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     });
   });
 
-  // Lazyload advantages
+  // Lazyloading of elements
   var addClassIfInViewport = function addClassIfInViewport(elemId, className, offset) {
     $(window).on('scroll', function () {
       setTimeout(function () {
@@ -10477,6 +10477,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var partnerLogos = $('.page-partners_logo_wrap');
   for (var _i = 0; _i < partnerLogos.length + 1; _i++) {
     addClassIfInViewport('page-partners_logo_wrap-' + _i, 'fadeInAndUp', -200);
+  }
+
+  var employees = $('.page-contactAndJobs_employee_wrap');
+  for (var _i2 = 0; _i2 < employees.length + 1; _i2++) {
+    addClassIfInViewport('page-contactAndJobs_employee_wrap-' + _i2, 'fadeInAndUp', -100);
   }
 });
 

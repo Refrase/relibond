@@ -4,12 +4,11 @@
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-radius: 2px;
   display: inline-block;
   font-size: 12px;
   font-family: $fontFamily-system;
   font-weight: $fontWeight-bold;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   line-height: $fontSize-base;
   outline: 0;
   padding: ($scale-1-2 + 2px) $scale;
@@ -18,9 +17,12 @@
   text-transform: uppercase;
   white-space: nowrap;
 
-  transition: all 0.15s ease-out;
+  transition: all 0.1s ease-out;
 
-  box-shadow: 0px 0px 30px rgba($color-brandBlack-darker-3, 0.3);
+  // box-shadow: 0px 0px 10px rgba( $color-brandBlack-darker-3, 0.3 );
+
+  box-shadow: 0px 2px 0px 0px $color-brandFirst-darker-2;
+  transform: translateY(-2px);
 
   @include breakpoint( 'tablet' ) {
     font-size: $fontSize-small;
@@ -38,14 +40,15 @@
   border-color: lighten( $color-brandFirst, 8% );
 
   &:hover {
-    transform: translateY( -1px );
     background: linear-gradient( $color-brandFirst, $color-brandFirst );
-    box-shadow: 0px 0px 50px rgba($color-brandBlack-darker-3, 0.45);
+    // box-shadow: 0px 0px 20px rgba( $color-brandBlack-darker-3, 0.3 );
+    box-shadow: 0px 3px 0px 0px $color-brandFirst-darker-2;
+    transform: translateY(-3px);
   }
 
   &:active {
     transform: translateY( 0px );
-    box-shadow: 0px 0px 10px rgba( $color-brandSecond-darker-3, 0.15 );
+    box-shadow: 0px 0px 5px rgba( $color-brandSecond-darker-3, 0.1 );
   }
 
 }

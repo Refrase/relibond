@@ -1383,43 +1383,43 @@ h6 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 38px;
   letter-spacing: 2px;
   line-height: 1.1;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
   h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 h6 {
@@ -1430,7 +1430,7 @@ p, a, li {
   color: #111;
   font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
   letter-spacing: 0.2px;
 }
@@ -1750,6 +1750,36 @@ p, a, li {
 }
 
 /* ----- Native HTML tags ----- */
+input, textarea {
+  padding: 8px 16px;
+  width: 100%;
+  border: none;
+  margin-top: 8px;
+  font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+}
+
+input:first-child, textarea:first-child {
+  margin-top: 0;
+}
+
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+:-moz-placeholder {
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
 /* ----- Nav ----- */
 /* ----- Scale ----- */
 /* ----- Colors ----- */
@@ -2241,21 +2271,21 @@ p, a, li {
 
 @media (max-width: 992px) {
   .page-welcome_title {
-    font-size: 32px;
+    font-size: 28px;
     top: 140px;
   }
 }
 
 @media (max-width: 768px) {
   .page-welcome_title {
-    font-size: 26px;
+    font-size: 22px;
     top: 55px;
   }
 }
 
 @media (max-width: 480px) {
   .page-welcome_title {
-    font-size: 18px;
+    font-size: 16px;
     top: 40px;
   }
 }
@@ -2599,6 +2629,43 @@ p, a, li {
   background: linear-gradient(rgba(227, 147, 33, 0.15), rgba(227, 147, 33, 0.3));
 }
 
+.page-contactAndJobs:after {
+  content: '';
+  background-image: url("static/vandmaerke-tandhjul.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.04;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -300px;
+  right: -10%;
+  z-index: -1;
+}
+
+@media (max-width: 992px) {
+  .page-contactAndJobs:after {
+    width: 600px;
+    height: 600px;
+    right: -20%;
+    top: -350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-contactAndJobs:after {
+    right: -50%;
+    top: -350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-contactAndJobs:after {
+    right: -82%;
+    top: -400px;
+  }
+}
+
 @media (max-width: 480px) {
   .page-contactAndJobs_companyMeta {
     margin-top: 16px;
@@ -2613,56 +2680,94 @@ p, a, li {
   font-size: 12px;
 }
 
-.button-primary {
+.page-contactAndJobs_employee_wrap {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+@media (min-width: 769px) {
+  .page-contactAndJobs_employee_wrap:nth-child(-n+3) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-contactAndJobs_employee_wrap:nth-child(-n+2) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-contactAndJobs_employee_wrap:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+.page-contactAndJobs_jobareas_list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.page-contactAndJobs_formular input[type="button"], .page-contactAndJobs_formular input[type="submit"] {
+  width: 100px;
+  float: right;
+}
+
+input[type="button"],
+input[type="submit"], .button-primary {
   position: relative;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-radius: 2px;
   display: inline-block;
   font-size: 12px;
   font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 14px;
+  letter-spacing: 1px;
+  line-height: 13px;
   outline: 0;
   padding: 10px 16px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: all 0.15s ease-out;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-out;
+  box-shadow: 0px 2px 0px 0px #8c5a12;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-  .button-primary {
+  input[type="button"],
+  input[type="submit"], .button-primary {
     font-size: 12px;
   }
 }
 
-.button-primary {
+input[type="button"],
+input[type="submit"], .button-primary {
   color: white;
   background: #E39321;
   background: linear-gradient(#e9a94e, #E39321);
   border-color: #e8a545;
 }
 
-.button-primary:hover {
-  transform: translateY(-1px);
+input[type="button"]:hover,
+input[type="submit"]:hover, .button-primary:hover {
   background: linear-gradient(#E39321, #E39321);
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 3px 0px 0px #8c5a12;
+  transform: translateY(-3px);
 }
 
-.button-primary:active {
+input[type="button"]:active,
+input[type="submit"]:active, .button-primary:active {
   transform: translateY(0px);
-  box-shadow: 0px 0px 10px rgba(16, 39, 62, 0.15);
+  box-shadow: 0px 0px 5px rgba(16, 39, 62, 0.1);
 }
 
 .button-link {
   color: #E39321;
   font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -2686,13 +2791,13 @@ p, a, li {
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 20px rgba(95, 61, 12, 0.15);
-  border-radius: 2px;
+  min-height: 320px;
 }
 
 .employee_image {
   max-width: 120px;
   border-radius: 50%;
-  margin-top: -80px;
+  margin-top: -50px;
 }
 
 .employee p, .employee h1, .employee h2, .employee h3, .employee h4, .employee h5, .employee h6 {

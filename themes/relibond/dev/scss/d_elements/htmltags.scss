@@ -1,5 +1,19 @@
 /* ----- Native HTML tags ----- */
 
-hr {
-  
+input, textarea {
+  padding: $scale-1-2 $scale;
+  width: 100%;
+  border: none;
+  margin-top: $scale-1-2;
+  font-family: $fontFamily-body;
+
+  &:first-child { margin-top: 0; }
 }
+
+::-webkit-input-placeholder { text-transform: uppercase; font-size: $fontSize-small; letter-spacing: 1px; }
+:-moz-placeholder { text-transform: uppercase; }
+::-moz-placeholder { text-transform: uppercase; }
+::-ms-input-placeholder { text-transform: uppercase; }
+
+input[type="button"],
+input[type="submit"] { @extend %button; }

@@ -8,6 +8,24 @@
     background: rgba($color-brandFirst, 0.15);
     background: linear-gradient(rgba($color-brandFirst, 0.15), rgba($color-brandFirst, 0.3));
 
+    &:after {
+      content: '';
+      background-image: url('static/vandmaerke-tandhjul.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.04;
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      top: -300px;
+      right: -10%;
+      z-index: -1;
+
+      @include breakpoint( 'desktop' ) { width: 600px; height: 600px; right: -20%; top: -350px; }
+      @include breakpoint( 'tablet' ) { right: -50%; top: -350px; }
+      @include breakpoint( 'mobile' ) { right: -82%; top: -400px; }
+    }
+
     &_companyMeta {
       @include breakpoint( 'mobile' ) { margin-top: $scale; }
 
@@ -19,6 +37,38 @@
         & li {
           font-size: $fontSize-small;
         }
+      }
+
+    }
+
+    &_employee_wrap {
+      opacity: 0;
+      margin-top: 30px;
+
+      @include breakpoint( 'tablet-above' ) { &:nth-child(-n+3) { margin-top: 0; } } // First 3
+      @include breakpoint( 'tablet' )       { &:nth-child(-n+2) { margin-top: 0; } } // First 2
+      @include breakpoint( 'mobile' )       { &:nth-child(2)    { margin-top: 30px;} } // First
+    }
+
+    &_jobareas {
+
+      &_list {
+        list-style-type: disc;
+        list-style-position: inside;
+      }
+
+    }
+
+    &_formular {
+
+      input {
+
+        &[type="button"],
+        &[type="submit"] {
+          width: 100px;
+          float: right;
+        }
+
       }
 
     }

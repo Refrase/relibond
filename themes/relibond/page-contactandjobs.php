@@ -30,7 +30,7 @@
 
     </div>
 
-    <div class="row margin-top-6-1">
+    <div class="row margin-top-4-1">
 
       <?php
         $args = array(
@@ -40,14 +40,40 @@
         );
         $query = new WP_Query( $args );
 
-        if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+        if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 
-        <div class="col-sm-6 col-sm-offset-0 col-md-4">
+        $i = $query->current_post + 1; ?>
+
+        <div
+          id="<?php echo 'page-contactAndJobs_employee_wrap-' . $i; ?>"
+          class="page-contactAndJobs_employee_wrap col-sm-6 col-sm-offset-0 col-md-4">
           <?php include 'employee.php'; ?>
         </div>
 
       <?php endwhile; endif; wp_reset_postdata(); ?>
 
+    </div>
+
+    <div class="row margin-top-4-1">
+      <div class="col-md-4">
+        <h4>Want to work with us?</h4>
+        <p>We are currently looking for collegues with competencies in the following areas:</p>
+        <ul class="page-contactAndJobs_jobareas_list margin-top">
+          <li>Business Development</li>
+          <li>Material Science</li>
+          <li>HV Electrical Engineering</li>
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <form class="page-contactAndJobs_formular" action="mailto:ar@type16.com" method="post" enctype="text/plain">
+          <input required type="text" name="name" placeholder="Name" />
+          <input required type="text" name="mail" placeholder="Mail" />
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea required type="text" name="message" placeholder="Message"></textarea>
+          <input type="submit" name="send" value="Send">
+        </form>
+      </div>
     </div>
   </article>
 </section>
