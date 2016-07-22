@@ -47,4 +47,35 @@
 	   return $html;
 	}
 
+	// Rearrange wp-admin menu
+	function custom_menu_order($menu_ord) {
+	    if (!$menu_ord) return true;
+
+	    return array(
+	        'index.php', // Dashboard
+					'edit.php?post_type=page', // Pages
+					'edit.php?post_type=employee', // Employees
+					'edit.php?post_type=partner', // Partners
+	        'separator1', // First separator
+	        'upload.php', // Media
+	        'link-manager.php', // Links
+	        'separator2', // Second separator
+	        'themes.php', // Appearance
+	        'plugins.php', // Plugins
+	        'users.php', // Users
+	        'tools.php', // Tools
+	        'options-general.php', // Settings
+	        'separator-last', // Last separator
+	    );
+	}
+	add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
+	add_filter('menu_order', 'custom_menu_order');
+
+	add_action('admin_menu', 'rrh_change_post_links');
+	function rrh_change_post_links() {
+		global $menu;
+		unset($menu[5]); // Remove posts from menu
+		unset($menu[25]); // Remove comments from menu
+	}
+
 ?>

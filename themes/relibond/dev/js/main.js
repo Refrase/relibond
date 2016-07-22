@@ -117,19 +117,25 @@ $(document).ready(function($) {
 	});
 
   // Lazyload advantages
-  const fadeInAndUpIfInViewport = ( elem ) => {
+  const addClassIfInViewport = ( elemId, className, offset ) => {
     $( window ).on( 'scroll', () => {
       setTimeout( () => {
-        const advantage = document.getElementById( elem );
-        const advantageInViewport = inViewport( advantage, { offset: -200 } );
+        const advantage = document.getElementById( elemId );
+        const advantageInViewport = inViewport( advantage, { offset: offset } );
         if ( advantageInViewport ) {
-          $( '#' + elem ).addClass( 'fadeInAndUp' );
+          $( '#' + elemId ).addClass( className );
         }
       }, 100);
     });
   }
-  fadeInAndUpIfInViewport( 'page-technology_advantage-1' );
-  fadeInAndUpIfInViewport( 'page-technology_advantage-2' );
-  fadeInAndUpIfInViewport( 'page-technology_advantage-3' );
+
+  const advantages = $( '.page-technology_advantage' );
+  for ( let i = 0; i < advantages.length + 1; i++ ) { addClassIfInViewport( 'page-technology_advantage-' + i, 'fadeInAndUp', -200 ); }
+
+  addClassIfInViewport( 'page-perspectives_text', 'page-perspectives_text-inViewport', -300 );
+
+  const partnerLogos = $( '.page-partners_logo_wrap' );
+  for ( let i = 0; i < partnerLogos.length + 1; i++ ) { addClassIfInViewport( 'page-partners_logo_wrap-' + i, 'fadeInAndUp', -200 ); }
+
 
 });

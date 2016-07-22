@@ -34,6 +34,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // Generic: Resets + globale styles
 
 // Elements: Html-elementer u. classes
+@import "./d_elements/htmltags";
 
 // Objects: Dele af siden
 @import "./e_objects/nav";
@@ -44,8 +45,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "./e_objects/contactandjobs";
 
 // Components: Specifikke dele af elementer
-@import "./f_components/buttons";
-@import "./f_components/titles";
+@import "./f_components/button";
+@import "./f_components/title";
+@import "./f_components/employee";
 
 // Trumps: Clearfix o.l.
 

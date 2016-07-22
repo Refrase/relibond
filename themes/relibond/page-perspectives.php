@@ -17,7 +17,7 @@
         </h1>
       </div>
 
-      <div class="page-perspectives_text col-md-5 margin-top">
+      <div id="page-perspectives_text" class="page-perspectives_text col-md-5 margin-top">
         <p><?php the_content(); ?></p>
       </div>
 

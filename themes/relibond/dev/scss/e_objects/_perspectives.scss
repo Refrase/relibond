@@ -6,8 +6,7 @@
     position: relative;
     overflow: hidden;
     background: $color-brandWhite;
-    background: linear-gradient($color-brandWhite-lighter-2, $color-brandWhite);
-    border-bottom: 1px solid darken($color-brandWhite, 10%);
+    background: linear-gradient($color-brandWhite-lighter-1, lighten($color-brandWhite, 4%) );
 
     &:after {
       content: '';
@@ -48,6 +47,8 @@
         bottom: -150px;
         transform: rotate(45deg);
         transform-origin: center right;
+
+        opacity: 0;
       }
 
       &:after {
@@ -60,6 +61,18 @@
         bottom: -250px;
         transform: rotate(45deg);
         transform-origin: center right;
+
+        opacity: 0;
+      }
+
+      @keyframes shootStrokesIn {
+        0%   { transform: rotate(45deg) translate3d( -100px, 0, 0 ); }
+        100% { transform: rotate(45deg) translate3d( 0, 0, 0 ); }
+      }
+
+      &-inViewport {
+        &:before { animation: shootStrokesIn 2s $animationBezier forwards, fadeIn 0.3s ease-out forwards; }
+        &:after { animation: shootStrokesIn 4s $animationBezier forwards, fadeIn 0.3s ease-out forwards; }
       }
 
     }
@@ -85,7 +98,7 @@
     	left: 15px;
     	width: calc( 100% - 30px ); // Bootstrap container padding
     	height: calc( 100% - 30px ); // Bootstrap container padding
-      box-shadow: 0px 0px 60px rgba($color-brandSecond-darker-3, 0.5);
+      // box-shadow: 0px 0px 60px rgba($color-brandSecond-darker-3, 0.5);
     }
 
   }

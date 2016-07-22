@@ -3,6 +3,25 @@
 .page {
 
   &-contactAndJobs {
+    position: relative;
+    overflow: hidden;
+    background: rgba($color-brandFirst, 0.15);
+    background: linear-gradient(rgba($color-brandFirst, 0.15), rgba($color-brandFirst, 0.3));
+
+    &_companyMeta {
+      @include breakpoint( 'mobile' ) { margin-top: $scale; }
+
+      &_title {}
+
+      &_list {
+        list-style: none;
+
+        & li {
+          font-size: $fontSize-small;
+        }
+      }
+
+    }
 
   }
 
