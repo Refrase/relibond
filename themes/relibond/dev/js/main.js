@@ -139,7 +139,7 @@ $(document).ready(function($) {
       $( 'body' ).toggleClass( 'margin-right-15' ); // Account for scrollbar
     }
     $( '#page-welcome_videoWithSound' ).attr( 'src', '' );
-    $( '.page-welcome_title, .nav-wrap' ).removeClass( 'display-none' ); 
+    $( '.page-welcome_title, .nav-wrap' ).removeClass( 'display-none' );
   });
 
   // Lazyloading of elements
@@ -166,5 +166,11 @@ $(document).ready(function($) {
   const employees = $( '.page-contactAndJobs_employee_wrap' );
   for ( let i = 0; i < employees.length + 1; i++ ) { addClassIfInViewport( 'page-contactAndJobs_employee_wrap-' + i, 'fadeInAndUp', -100 ); }
 
+  // Contact form: Add placeholder to textarea (plugin generated contact form)
+  $( '#ninja_forms_field_3' ).attr('placeholder', 'Message');
+  $( '.ninja-forms-field' ).attr( 'required', true );
+  $( '#ninja_forms_field_4' ).on( 'click', () => {
+    window.location = 'http://localhost/012_relibond/#contact-relibond';
+  });
 
 });

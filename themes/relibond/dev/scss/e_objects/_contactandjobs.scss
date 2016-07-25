@@ -59,31 +59,68 @@
 
     }
 
-    &_formular_wrap {
+    &_form_wrap {
       @include breakpoint( 'mobile' ) {
         margin-top: $scale-2-1;
       }
     }
 
-    &_form {
+    form {
 
-      &_message {
+      & #ninja_forms_form_1_all_fields_wrap {
+        & .field-wrap {
+          margin-bottom: 10px;
+        }
+        label {
+          display: none;
+          // font-family: $fontFamily-system;
+          // font-size: 12px;
+        }
 
-        &-success {}
-        &-error {}
-
+        input, textarea {
+          margin: 0;
+        }
       }
+      & .ninja-forms-required-items { display: none; }
+      & .textarea-wrap textarea { height: 100px; }
 
       input {
 
         &[type="button"],
         &[type="submit"] {
-          width: 100px;
+          min-width: 100px;
           float: right;
         }
 
       }
 
+    }
+
+    @keyframes fadeInAndUpSuccessMessage {
+    	0% 		{ opacity: 0; transform: translate3d(0, 60px, 0); }
+    	100% 	{ opacity: 1; transform: translate3d(0, 0, 0); }
+    }
+
+    & .ninja-forms-success-msg,
+    & .ninja-forms-error-msg {
+      padding: $scale;
+      font-style: italic;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba($color-brandFirst, 0.8);
+      z-index: 10001;
+      text-align: center;
+      opacity: 0;
+      animation: fadeInAndUpSuccessMessage 1s 1s ease-out forwards, fadeOutHide 2s 8s ease-out forwards;
+
+      p, div {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: $fontFamily-system;
+      }
     }
 
   }

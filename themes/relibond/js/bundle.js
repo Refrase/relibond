@@ -10509,6 +10509,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   for (var _i2 = 0; _i2 < employees.length + 1; _i2++) {
     addClassIfInViewport('page-contactAndJobs_employee_wrap-' + _i2, 'fadeInAndUp', -100);
   }
+
+  // Contact form: Add placeholder to textarea (plugin generated contact form)
+  $('#ninja_forms_field_3').attr('placeholder', 'Message');
+  $('.ninja-forms-field').attr('required', true);
+  $('#ninja_forms_field_4').on('click', function () {
+    window.location = 'http://localhost/012_relibond/#contact-relibond';
+  });
 });
 
 },{"in-viewport":1,"jquery":2}]},{},[3]);

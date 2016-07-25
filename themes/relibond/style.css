@@ -2763,14 +2763,69 @@ input:first-child, textarea:first-child {
 }
 
 @media (max-width: 480px) {
-  .page-contactAndJobs_formular_wrap {
+  .page-contactAndJobs_form_wrap {
     margin-top: 32px;
   }
 }
 
-.page-contactAndJobs_form input[type="button"], .page-contactAndJobs_form input[type="submit"] {
-  width: 100px;
+.page-contactAndJobs form #ninja_forms_form_1_all_fields_wrap .field-wrap {
+  margin-bottom: 10px;
+}
+
+.page-contactAndJobs form #ninja_forms_form_1_all_fields_wrap label {
+  display: none;
+}
+
+.page-contactAndJobs form #ninja_forms_form_1_all_fields_wrap input, .page-contactAndJobs form #ninja_forms_form_1_all_fields_wrap textarea {
+  margin: 0;
+}
+
+.page-contactAndJobs form .ninja-forms-required-items {
+  display: none;
+}
+
+.page-contactAndJobs form .textarea-wrap textarea {
+  height: 100px;
+}
+
+.page-contactAndJobs form input[type="button"], .page-contactAndJobs form input[type="submit"] {
+  min-width: 100px;
   float: right;
+}
+
+@keyframes fadeInAndUpSuccessMessage {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.page-contactAndJobs .ninja-forms-success-msg,
+.page-contactAndJobs .ninja-forms-error-msg {
+  padding: 16px;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(227, 147, 33, 0.8);
+  z-index: 10001;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInAndUpSuccessMessage 1s 1s ease-out forwards, fadeOutHide 2s 8s ease-out forwards;
+}
+
+.page-contactAndJobs .ninja-forms-success-msg p, .page-contactAndJobs .ninja-forms-success-msg div,
+.page-contactAndJobs .ninja-forms-error-msg p,
+.page-contactAndJobs .ninja-forms-error-msg div {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
 }
 
 input[type="button"],
