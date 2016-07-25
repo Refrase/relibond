@@ -23,7 +23,7 @@
           <li><?php the_field( 'company-street' ); ?></li>
           <li><?php the_field( 'company-city' ); ?></li>
           <li><?php the_field( 'company-country' ); ?></li>
-          <li><?php the_field( 'company-mail' ); ?></li>
+          <li><a href="mailto:<?php the_field( 'company-mail' ); ?>"><?php the_field( 'company-mail' ); ?></a></li>
           <li><?php the_field( 'company-cvr' ); ?></li>
         </ul>
       </div>
@@ -38,14 +38,14 @@
           'orderby' => 'order',
           'order'   => 'ASC',
         );
+
         $query = new WP_Query( $args );
 
         if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 
         $i = $query->current_post + 1; ?>
 
-        <div
-          id="<?php echo 'page-contactAndJobs_employee_wrap-' . $i; ?>"
+        <div id="<?php echo 'page-contactAndJobs_employee_wrap-' . $i; ?>"
           class="page-contactAndJobs_employee_wrap col-sm-6 col-sm-offset-0 col-md-4">
           <?php include 'employee.php'; ?>
         </div>
@@ -65,12 +65,19 @@
         </ul>
       </div>
 
-      <div class="col-md-8">
-        <form class="page-contactAndJobs_formular" action="mailto:ar@type16.com" method="post" enctype="text/plain">
-          <input required type="text" name="name" placeholder="Name" />
-          <input required type="text" name="mail" placeholder="Mail" />
-          <input type="text" name="subject" placeholder="Subject" />
-          <textarea required type="text" name="message" placeholder="Message"></textarea>
+      <div class="page-contactAndJobs_form_wrap col-md-8">
+
+        <form class="page-contactAndJobs_form" action="<?php bloginfo('template_directory'); ?>/process-contact-form.php" method="post" enctype="text/plain">
+          <input required type="text" name="name" placeholder="Name"
+          value="<?php if( isset($_POST['name']) ) echo esc_attr($_POST['name']); ?>" />
+          <input required type="text" name="mail" placeholder="Mail"
+          value="<?php if( isset($_POST['mail']) ) echo esc_attr($_POST['mail']); ?>" />
+          <input type="text" name="subject" placeholder="Subject"
+          value="<?php if( isset($_POST['subject']) ) echo esc_attr($_POST['subject']); ?>" />
+          <textarea required type="text" name="message" placeholder="Message" value="
+            <?php if( isset($_POST['message']) ) { echo esc_textarea($_POST['message']); } else { echo ''; } ?>">
+          </textarea>
+          <input type="hidden" name="submitted" value="1">
           <input type="submit" name="send" value="Send">
         </form>
       </div>

@@ -56,8 +56,14 @@
     &-10-1 { margin-top: $scale-10-1; }
 
     @include breakpoint( 'mobile' ) {
-      margin-top: $scale-2-1;
+      margin-top: $scale;
     }
+
+  }
+
+  &-right {
+
+    &-15 { margin-right: 15px; } // Scrollbar
 
   }
 
@@ -93,6 +99,26 @@
 
 }
 
+.display {
+
+  &-none { display: none; }
+  &-flex { display: flex; }
+
+}
+
+.position {
+
+  &-fixed { position: fixed; }
+
+}
+
+.overflow {
+
+  &-hidden { overflow: hidden; }
+
+}
+
 // Animation
 
-.fadeInAndUp { animation: fadeInAndUp 3s $animationBezier forwards }
+.fadeInAndUp { animation: fadeInAndUp 1s $animationBezier forwards }
+.fadeIn { animation: fadeIn 0.3s $animationBezier forwards }

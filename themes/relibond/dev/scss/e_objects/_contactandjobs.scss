@@ -59,7 +59,20 @@
 
     }
 
-    &_formular {
+    &_formular_wrap {
+      @include breakpoint( 'mobile' ) {
+        margin-top: $scale-2-1;
+      }
+    }
+
+    &_form {
+
+      &_message {
+
+        &-success {}
+        &-error {}
+
+      }
 
       input {
 

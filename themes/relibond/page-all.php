@@ -31,6 +31,7 @@ get_header(); ?>
     if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
       if ( $post->post_name === 'contact-jobs' )  { get_template_part( 'page', 'contactandjobs' ); }
     endwhile; endif; wp_reset_postdata();
+
   ?>
 
 <?php get_footer(); ?>

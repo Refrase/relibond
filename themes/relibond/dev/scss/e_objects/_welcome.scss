@@ -27,7 +27,26 @@
     // flex-basis: auto;
 
     &_videoWithSound_wrap {
-      display: none;
+      position: absolute;
+      z-index: 10001;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      background: rgba( black, 0.8 );
+      cursor: s-resize;
+    }
+
+    &_videoWithSound {
+      width: 66vw;
+      height: calc( 66vw * 0.56666 );
+
+      @include breakpoint( 'widescreen' ) {
+        width: 40vw;
+        height: calc( 40vw * 0.56666 );
+      }
     }
 
     &_video_wrap {
@@ -41,6 +60,18 @@
     }
 
     & video[poster] { width: 100vw; }
+
+    // Hide automatically added play-button for e.g. iOS devices
+    // Old syntax
+    & video::-webkit-media-controls-play-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+    // New syntax
+    & video::-webkit-media-controls-start-playback-button {
+      display: none !important;
+      -webkit-appearance: none;
+    }
 
     &_title {
       position: absolute;

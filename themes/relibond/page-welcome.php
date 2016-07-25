@@ -8,16 +8,18 @@
 
 <section id="<?php echo $post->post_name; ?>" <?php echo post_class( 'page-welcome' ); ?>>
   <article class="container-fluid">
-    <div class="row">
+    <div class="row page-welcome_firstRow">
 
-      <div class="page-welcome_videoWithSound_wrap">
+      <div class="page-welcome_videoWithSound_wrap display-none">
         <iframe
           allowfullscreen
           frameborder="0"
-          id="welcome_videoWithSound_wrap"
-          src="https://www.youtube.com/embed/tKQNenGV4ZU"
+          class="page-welcome_videoWithSound"
+          id="page-welcome_videoWithSound"
+          src=""
         ></iframe>
       </div>
+      <!-- src-tag is set in main.js to autoplay video on click of button and stop on click on overlay  -->
 
       <div class="page-welcome_video_wrap">
         <video

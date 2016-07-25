@@ -5,6 +5,6 @@
   <span class="employee_divider"></span>
   <p><?php the_field( 'title' ); ?></p>
   <span class="employee_divider"></span>
-  <p><?php the_field( 'mail' ); ?></p>
+  <p><a href="mailto:<?php the_field( 'mail' ); ?>"><?php the_field( 'mail' ); ?></a></p>
   <p><?php the_field( 'phone' ); ?></p>
 </div>

@@ -115,16 +115,12 @@
       cursor: pointer;
       background: rgba(white, 0.99);
       border: 1px solid $color-brandWhite;
-      box-shadow: 0px 0px 20px rgba($color-brandSecond-darker-3, 0.3);
+      box-shadow: 0px 0px 10px rgba($color-brandSecond-darker-3, 0.1);
       transition: 0.15s ease-out;
     }
 
-    &:hover {
-      background: #f7f7f7;
-      box-shadow: 0px 0px 30px rgba($color-brandSecond-darker-3, 0.5);
-    }
-
-    &:active { box-shadow: 0px 0px 10px rgba($color-brandSecond-darker-3, 0.2); }
+    &:hover { box-shadow: 0px 0px 20px rgba($color-brandSecond-darker-3, 0.2); }
+    &:active { box-shadow: none; }
 
     &_inner {
       position: relative;

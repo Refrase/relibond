@@ -10454,6 +10454,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     });
   });
 
+  // Video with sound load and show + hide
+  var isTouchDevice = 'ontouchstart' in document.documentElement;
+  var videoUrl = 'https://www.youtube.com/embed/tKQNenGV4ZU?modestbranding=1&start=7&autoplay=1&origin=http://relibond.com';
+
+  $('.page-welcome_button').on('click', function () {
+    $('.page-welcome_videoWithSound_wrap').toggleClass('display-none display-flex fadeIn');
+    setTimeout(function () {
+      $('body').toggleClass('overflow-hidden position-fixed');
+      if (!isTouchDevice) {
+        $('body').toggleClass('margin-right-15'); // Account for scrollbar
+      }
+    }, 600);
+    $('#page-welcome_videoWithSound').attr('src', videoUrl); // Set url of youtube
+    $('.page-welcome_title, .nav-wrap').addClass('display-none'); // Hidden to avoid problem with these showing in front of movie when played in full screen
+  });
+
+  $('.page-welcome_videoWithSound_wrap').on('click', function () {
+    $('.page-welcome_videoWithSound_wrap').toggleClass('display-none display-flex fadeIn');
+    $('body').toggleClass('overflow-hidden position-fixed');
+    if (!isTouchDevice) {
+      $('body').toggleClass('margin-right-15'); // Account for scrollbar
+    }
+    $('#page-welcome_videoWithSound').attr('src', '');
+    $('.page-welcome_title, .nav-wrap').removeClass('display-none');
+  });
+
   // Lazyloading of elements
   var addClassIfInViewport = function addClassIfInViewport(elemId, className, offset) {
     $(window).on('scroll', function () {
