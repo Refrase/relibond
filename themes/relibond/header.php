@@ -2,10 +2,12 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title><?php wp_title(); ?></title>
+    <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/ic/favicon.ico?v=2">
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/ic/favicon.ico?v=3">
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/ic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/ic/favicon-16x16.png" sizes="16x16" />
     <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/ic/touch-icon-57.png">
     <link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_directory'); ?>/ic/touch-icon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_directory'); ?>/ic/touch-icon-120.png">
