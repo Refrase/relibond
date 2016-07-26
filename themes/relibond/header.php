@@ -5,7 +5,7 @@
     <title><?php wp_title(); ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/ic/favicon.ico">
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/ic/favicon.ico?v=2">
     <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/ic/touch-icon-57.png">
     <link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_directory'); ?>/ic/touch-icon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_directory'); ?>/ic/touch-icon-120.png">
@@ -44,7 +44,6 @@
           // 'container_id'    => 'nav-main',
           'menu_class'      => 'nav nav-hidden',
           'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-          'walker'          => new wp_bootstrap_navwalker()
         );
         wp_nav_menu( $defaults );
       ?>

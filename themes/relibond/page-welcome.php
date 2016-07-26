@@ -24,6 +24,7 @@
       <div class="page-welcome_video_wrap">
         <video
           id="welcome_video"
+          autoplay
           loop
           muted
           poster="<?php bloginfo('template_directory'); ?>/static/relibond-autoplay-video-poster-2.jpg"

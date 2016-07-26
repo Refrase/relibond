@@ -3,9 +3,6 @@
 	add_theme_support( 'menus' );
 	add_theme_support( 'post-thumbnails' );
 
-	// Register Custom Bootstrap Navigation Walker
-	require_once( get_template_directory() .  '/wp_bootstrap_navwalker.php' );
-
 	// Menu
 	function relibond_theme_menus() {
 		register_nav_menus(
