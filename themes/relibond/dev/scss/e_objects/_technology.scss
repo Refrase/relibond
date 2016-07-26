@@ -119,12 +119,13 @@
           &:before {
             content: '';
             position: absolute;
-            height: 100px;
+            height: 40px;
             width: 4px;
             background: black;
-            bottom: -130px;
+            bottom: -64px;
 
-            @include breakpoint( 'mobile' ) { bottom: -55px; height: 40px; }
+            @include breakpoint( 'tablet' ) { bottom: -48px; height: 24px; }
+            @include breakpoint( 'mobile' ) { bottom: -32px; height: 20px; }
           }
 
         }

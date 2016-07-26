@@ -34,24 +34,71 @@ $(document).ready(function($) {
   //   }, 300);
   // });
 
-  // Fix menu ved scroll opad
+  const showMenu = () => {
+    $( '.nav' ).removeClass( 'nav-shown' ); // Might have been put on through window resize (see function below)
+    $( '.nav_open' ).removeClass( 'open' );
+    $( '.nav' ).removeClass( 'nav-hideAfterFixed' );
+    $( '.nav' ).addClass( 'nav-fixed' );
+  };
+
+  const hideMenu = () => {
+    $( '.nav' ).removeClass( 'nav-fixed' );
+    $( '.nav' ).addClass( 'nav-hideAfterFixed' );
+  };
+
   let scrollTop = 0;
   $( window ).on( 'scroll', () => {
     setTimeout( () => {
       const newScrollTop = $( window ).scrollTop();
       const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
-      if ( newScrollTop < scrollTop && !hasFixedClass ) {
-        $( '.nav' ).removeClass( 'nav-shown' ); // Might have been put on through window resize (see function below)
-        $( '.nav_open' ).removeClass( 'open' );
-        $( '.nav' ).removeClass( 'nav-hideAfterFixed' );
-        $( '.nav' ).addClass( 'nav-fixed' );
-      } else if ( newScrollTop > scrollTop && newScrollTop > 500 ) {
-        $( '.nav' ).removeClass( 'nav-fixed' );
-        $( '.nav' ).addClass( 'nav-hideAfterFixed' );
-      }
+      if ( newScrollTop < scrollTop && !hasFixedClass ) { showMenu(); }
+      else if ( newScrollTop > scrollTop && newScrollTop > 500 ) { hideMenu(); }
       scrollTop = $( window ).scrollTop();
     }, 50);
   });
+
+  // Kombinér fix menu ved scroll opad og fix ved cursor øverst i vindue (virker ikke korrekt endnu)
+  // let menuShownByScroll = false;
+  // let menuShownByMousePos = false;
+  // let scrollTop = 0;
+  //
+  // $( window ).on( 'scroll', () => {
+  //   setTimeout( () => {
+  //     const newScrollTop = $( window ).scrollTop();
+  //     const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
+  //     if ( newScrollTop > 500 && !menuShownByMousePos ) {
+  //       if ( newScrollTop < scrollTop && !hasFixedClass ) {
+  //         showMenu();
+  //         menuShownByScroll = true;
+  //       } else {
+  //         hideMenu();
+  //         setTimeout( () => {
+  //           menuShownByScroll = false;
+  //         }, 1600);
+  //       }
+  //     }
+  //     scrollTop = $( window ).scrollTop();
+  //   }, 200);
+  // });
+  //
+  // // Fix menu, når mus er øverst i vinduet
+  // $( document ).mousemove( (e) => {
+  //   setTimeout( () => {
+  //     const mousePosFromTop = e.pageY - $(window).scrollTop();
+  //     const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
+  //     if ( scrollTop > 500 && !menuShownByScroll ) {
+  //       if ( mousePosFromTop < 40 && !hasFixedClass ) {
+  //         showMenu();
+  //         menuShownByMousePos = true;
+  //       } else {
+  //         hideMenu();
+  //         setTimeout( () => {
+  //           menuShownByMousePos = false;
+  //         }, 1600);
+  //       }
+  //     }
+  //   }, 200);
+  // });
 
   // Opdatér aktivt link i nav med .active state
   $( '.nav a' ).on( 'click', function() {
@@ -132,7 +179,7 @@ $(document).ready(function($) {
     $( '.page-welcome_title, .nav-wrap' ).addClass( 'display-none' ); // Hidden to avoid problem with these showing in front of movie when played in full screen
   });
 
-  $( '.page-welcome_videoWithSound_wrap' ).on( 'click', () => {
+  const hideVideoWithSound = () => {
     $( '.page-welcome_videoWithSound_wrap' ).toggleClass( 'display-none display-flex fadeIn' );
     $( 'body' ).toggleClass( 'overflow-hidden position-fixed' );
     if ( !isTouchDevice ) {
@@ -140,6 +187,18 @@ $(document).ready(function($) {
     }
     $( '#page-welcome_videoWithSound' ).attr( 'src', '' );
     $( '.page-welcome_title, .nav-wrap' ).removeClass( 'display-none' );
+  };
+
+  $( '.page-welcome_videoWithSound_wrap' ).on( 'click', hideVideoWithSound );
+
+  // Hide video with esc
+  $( window ).on( 'keydown', (e) => {
+    const charCode = e.which || e.keyCode;
+    const videoWithSoundActive = $( '.page-welcome_videoWithSound_wrap' ).hasClass( 'display-flex' );
+    console.log(charCode);
+    if ( videoWithSoundActive && charCode === 27 ) {
+      hideVideoWithSound();
+    }
   });
 
   // Lazyloading of elements
@@ -169,8 +228,5 @@ $(document).ready(function($) {
   // Contact form: Add placeholder to textarea (plugin generated contact form)
   $( '#ninja_forms_field_3' ).attr('placeholder', 'Message');
   $( '.ninja-forms-field' ).attr( 'required', true );
-  $( '#ninja_forms_field_4' ).on( 'click', () => {
-    window.location = 'http://localhost/012_relibond/#contact-relibond';
-  });
 
 });

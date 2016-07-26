@@ -7,7 +7,7 @@
 <!--//////////////////// Technology \\\\\\\\\\\\\\\\\\\\-->
 
 <section id="<?php echo $post->post_name; ?>" <?php echo post_class( 'page-technology' ); ?>>
-  <article class="container padding-topBottom padding-topBottom-6-1">
+  <article class="container padding-topBottom padding-topBottom-4-1">
     <div class="row">
       <div class="col-xs-12">
         <h1 class="page-technology_title textAlign-center title-twoWeights">

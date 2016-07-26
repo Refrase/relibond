@@ -1384,7 +1384,7 @@ h6 {
 
 h1 {
   font-size: 38px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.1;
 }
 
@@ -2525,16 +2525,23 @@ input:first-child, textarea:first-child {
 .page-technology_advantage-3_text:before {
   content: '';
   position: absolute;
-  height: 100px;
+  height: 40px;
   width: 4px;
   background: black;
-  bottom: -130px;
+  bottom: -64px;
+}
+
+@media (max-width: 768px) {
+  .page-technology_advantage-3_text:before {
+    bottom: -48px;
+    height: 24px;
+  }
 }
 
 @media (max-width: 480px) {
   .page-technology_advantage-3_text:before {
-    bottom: -55px;
-    height: 40px;
+    bottom: -32px;
+    height: 20px;
   }
 }
 
@@ -2646,17 +2653,13 @@ input:first-child, textarea:first-child {
 }
 
 /* ----- Page: Partners ----- */
-.page-partners {
-  padding-bottom: 48px;
-}
-
 .page-partners_title {
   width: 100%;
   text-align: center;
-  margin-top: -14px;
   transform: translateZ(0px);
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #cdcdd6;
 }
 
 .page-partners_logo_wrap {

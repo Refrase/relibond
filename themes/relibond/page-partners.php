@@ -9,9 +9,9 @@
 <section id="<?php echo $post->post_name; ?>" <?php echo post_class( 'page-partners' ); ?>>
   <article class="container">
 
-    <h3 class="page-partners_title"><?php the_title(); ?></h3>
-
     <div class="row padding-topBottom padding-topBottom-2-1">
+
+      <h2 class="page-partners_title"><?php the_title(); ?></h2>
 
       <?php
         $args = array(

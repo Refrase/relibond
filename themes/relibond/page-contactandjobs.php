@@ -7,7 +7,7 @@
 <!--//////////////////// Contact & Jobs \\\\\\\\\\\\\\\\\\\\-->
 
 <section id="<?php echo $post->post_name; ?>" <?php echo post_class( 'page-contactAndJobs' ); ?>>
-  <article class="container padding-topBottom padding-topBottom-6-1">
+  <article class="container padding-topBottom padding-topBottom-4-1">
     <div class="row">
 
       <div class="col-xs-12">
@@ -65,7 +65,7 @@
         </ul>
       </div>
 
-      <div id="contact-relibond" class="page-contactAndJobs_form_wrap col-md-8">
+      <div class="page-contactAndJobs_form_wrap col-md-8">
         <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
       </div>
     </div>

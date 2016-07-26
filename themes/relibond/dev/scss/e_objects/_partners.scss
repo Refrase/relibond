@@ -3,15 +3,16 @@
 .page {
 
   &-partners {
-    padding-bottom: $scale-3-1;
+    // padding-bottom: $scale-3-1;
 
     &_title {
       width: 100%;
       text-align: center;
-      margin-top: -14px;
+      // margin-top: -14px;
       transform: translateZ(0px);
       letter-spacing: 1px;
       text-transform: uppercase;
+      color: $color-shadow-lighter-1;
     }
 
     &_logo_wrap {
