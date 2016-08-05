@@ -46,16 +46,16 @@ $(document).ready(function($) {
     $( '.nav' ).addClass( 'nav-hideAfterFixed' );
   };
 
-  let scrollTop = 0;
-  $( window ).on( 'scroll', () => {
-    setTimeout( () => {
-      const newScrollTop = $( window ).scrollTop();
-      const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
-      if ( newScrollTop < scrollTop && !hasFixedClass ) { showMenu(); }
-      else if ( newScrollTop > scrollTop && newScrollTop > 500 ) { hideMenu(); }
-      scrollTop = $( window ).scrollTop();
-    }, 50);
-  });
+  // let scrollTop = 0;
+  // $( window ).on( 'scroll', () => {
+  //   setTimeout( () => {
+  //     const newScrollTop = $( window ).scrollTop();
+  //     const hasFixedClass = $( '.nav' ).hasClass( 'nav-fixed' );
+  //     if ( newScrollTop < scrollTop && !hasFixedClass ) { showMenu(); }
+  //     else if ( newScrollTop > scrollTop && newScrollTop > 500 ) { hideMenu(); }
+  //     scrollTop = $( window ).scrollTop();
+  //   }, 50);
+  // });
 
   // Kombinér fix menu ved scroll opad og fix ved cursor øverst i vindue (virker ikke korrekt endnu)
   // let menuShownByScroll = false;
