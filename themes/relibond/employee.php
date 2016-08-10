@@ -7,4 +7,7 @@
   <span class="employee_divider"></span>
   <p><a href="mailto:<?php the_field( 'mail' ); ?>"><?php the_field( 'mail' ); ?></a></p>
   <p><?php the_field( 'phone' ); ?></p>
+  <a href="<?php the_field( 'link-linkedin' ); ?>" class="margin-top">
+    <img src="<?php bloginfo('template_directory'); ?>/ic/linkedin.svg" alt="Link to Linkedin" width="24" />
+  </a>
 </div>
