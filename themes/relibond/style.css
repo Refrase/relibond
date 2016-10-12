@@ -2912,6 +2912,12 @@ input[type="submit"]:active, .button-primary:active {
   min-height: 334px;
 }
 
+@media (max-width: 992px) {
+  .employee {
+    min-height: 352px;
+  }
+}
+
 .employee_image {
   max-width: 120px;
   border-radius: 50%;
