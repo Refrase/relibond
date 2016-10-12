@@ -60,7 +60,7 @@
     }
 
     &_form_wrap {
-      @include breakpoint( 'mobile' ) {
+      @include breakpoint( 'tablet' ) {
         margin-top: $scale-2-1;
       }
     }
