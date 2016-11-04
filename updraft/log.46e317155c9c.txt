@@ -1,0 +1,527 @@
+0000.001 (0) Opened log file at time: Wed, 12 Oct 2016 09:26:23 +0000 on http://www.relibond.com
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.23 WP: 4.5.4 PHP: 5.6.26 (litespeed, Linux ws22.surf-town.net 2.6.32-642.6.1.el6.x86_64 #1 SMP Wed Oct 5 00:36:12 UTC 2016 x86_64) MySQL: 5.6.33 WPLANG: en_US Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 1024M (used: 4.9M | 5M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 234332.3 MB
+0000.023 (0) Tasks: Backup files: 1 (schedule: monthly) Backup DB: 1 (schedule: monthly)
+0000.029 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.037 (0) Semaphore (fd) was stuck, set lock time to 2016-10-12 09:26:24
+0000.043 (0) Semaphore (fd) reset to 1
+0000.047 (0) Set semaphore last lock (fd) time to 2016-10-12 09:26:24
+0000.049 (0) Semaphore lock (fd) complete
+0000.061 (0) Backup run: resumption=0, nonce=46e317155c9c, begun at=1476264383 (1s ago), job type=backup
+0000.065 (0) Scheduling a resumption (1) after 348 seconds (1476264732) in case this run gets aborted
+0000.072 (0) Checking if we have a zip executable available
+0000.076 (0) Creation of backups of directories: beginning
+0000.085 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.726 (0) Total entities for the zip file: 304 directories, 2029 files (0 skipped as non-modified), 20.5 MB
+0001.779 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.827 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.881 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.930 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.977 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.980 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.9 MB, 2029 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0002.826 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 600 files added (on-disk size: 3018.1 KB)
+0002.877 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 700 files added (on-disk size: 3018.1 KB)
+0002.936 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 800 files added (on-disk size: 3018.1 KB)
+0003.013 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 900 files added (on-disk size: 3018.1 KB)
+0003.066 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1000 files added (on-disk size: 3018.1 KB)
+0003.076 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.5 MB, 2029 files batched, 501 (1002) added so far); re-opening (prior size: 3018.1 KB)
+0003.931 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1100 files added (on-disk size: 5158.6 KB)
+0003.978 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1200 files added (on-disk size: 5158.6 KB)
+0004.029 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1300 files added (on-disk size: 5158.6 KB)
+0004.088 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1400 files added (on-disk size: 5158.6 KB)
+0004.142 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1500 files added (on-disk size: 5158.6 KB)
+0004.147 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.3 MB, 2029 files batched, 501 (1503) added so far); re-opening (prior size: 5158.6 KB)
+0006.096 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1600 files added (on-disk size: 6730.6 KB)
+0006.165 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1700 files added (on-disk size: 6730.6 KB)
+0006.255 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1800 files added (on-disk size: 6730.6 KB)
+0006.340 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 1900 files added (on-disk size: 6730.6 KB)
+0006.421 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip.tmp: 2000 files added (on-disk size: 6730.6 KB)
+0006.427 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.5 MB, 2029 files batched, 501 (2004) added so far); re-opening (prior size: 6730.6 KB)
+0006.998 (0) Created plugins zip (0) - 7463.4 KB in 6.9 s (1080.6 KB/s) (SHA1 checksum: 5f9b75e7f6a565087915d889582085b53b6676cb)
+0007.005 (0) Beginning creation of dump of themes (split every: 400 MB)
+0007.060 (0) Total entities for the zip file: 6 directories, 58 files (0 skipped as non-modified), 5.5 MB
+0007.530 (0) Created themes zip (0) - 4678 KB in 0.5 s (9038.7 KB/s) (SHA1 checksum: 098527db9ed8bcbe4293a42536e74e1332656c6d)
+0007.536 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0007.539 (0) Looking for candidates to back up in: /hsphere/local/home/hb988044317/relibond.com/wp-content/uploads
+0007.541 (0) finding files: 2016: adding to list (1)
+0007.542 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0007.602 (0) Total entities for the zip file: 4 directories, 81 files (0 skipped as non-modified), 4.9 MB
+0008.375 (0) Created uploads zip (0) - 4501.3 KB in 0.8 s (5441.4 KB/s) (SHA1 checksum: 0c8a4f73bcec4153e82091b2f5b5cfe73e50512c)
+0008.381 (0) Beginning backup of other directories found in the content directory (index: 0)
+0008.382 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0008.384 (0) Looking for candidates to back up in: /hsphere/local/home/hb988044317/relibond.com/wp-content
+0008.386 (0) finding files: upgrade: skipping: excluded by options
+0008.388 (0) finding files: node_modules: adding to list (1)
+0008.391 (0) finding files: .DS_Store: adding to list (2)
+0008.393 (0) finding files: .gitattributes: adding to list (3)
+0008.394 (0) finding files: README.md: adding to list (4)
+0008.395 (0) finding files: package.json: adding to list (5)
+0008.397 (0) finding files: index.php: adding to list (6)
+0008.398 (0) finding files: updraft: skipping: this is the updraft directory
+0008.400 (0) finding files: uploads: skipping: this is the uploads directory
+0008.402 (0) finding files: .eslintrc: adding to list (7)
+0008.403 (0) finding files: .git: adding to list (8)
+0008.405 (0) finding files: gruntfile.js: adding to list (9)
+0008.407 (0) finding files: plugins: skipping: this is the plugins directory
+0008.409 (0) finding files: themes: skipping: this is the themes directory
+0008.411 (0) finding files: .babelrc: adding to list (10)
+0008.412 (0) finding files: .gitignore: adding to list (11)
+0061.204 (0) File counting took a long time (53s); will attempt to cache results (memory_limit: 1024M (used: 14.2M | 14.8M), estimated uncompressed bytes: 4769.2 Kb)
+0061.431 (0) Total entities for the zip file: 2296 directories, 27360 files (0 skipped as non-modified), 75.4 MB
+0061.656 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0061.870 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 100 files added (on-disk size: 325.4 KB)
+0061.961 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 200 files added (on-disk size: 325.4 KB)
+0062.058 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 300 files added (on-disk size: 325.4 KB)
+0062.168 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 400 files added (on-disk size: 325.4 KB)
+0062.283 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 500 files added (on-disk size: 325.4 KB)
+0062.288 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (502) added so far); re-opening (prior size: 325.4 KB)
+0062.747 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 600 files added (on-disk size: 566 KB)
+0062.869 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 700 files added (on-disk size: 566 KB)
+0062.975 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 800 files added (on-disk size: 566 KB)
+0063.098 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 900 files added (on-disk size: 566 KB)
+0063.198 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1000 files added (on-disk size: 566 KB)
+0063.204 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 27360 files batched, 501 (1003) added so far); re-opening (prior size: 566 KB)
+0063.801 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1100 files added (on-disk size: 1283.7 KB)
+0063.899 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1200 files added (on-disk size: 1283.7 KB)
+0063.999 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1300 files added (on-disk size: 1283.7 KB)
+0064.119 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1400 files added (on-disk size: 1283.7 KB)
+0064.228 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1500 files added (on-disk size: 1283.7 KB)
+0064.236 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (1504) added so far); re-opening (prior size: 1283.7 KB)
+0064.639 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1600 files added (on-disk size: 1493.6 KB)
+0064.734 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1700 files added (on-disk size: 1493.6 KB)
+0064.840 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1800 files added (on-disk size: 1493.6 KB)
+0064.939 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 1900 files added (on-disk size: 1493.6 KB)
+0065.076 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2000 files added (on-disk size: 1493.6 KB)
+0065.084 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 27360 files batched, 501 (2005) added so far); re-opening (prior size: 1493.6 KB)
+0065.538 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2100 files added (on-disk size: 1883.8 KB)
+0065.638 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2200 files added (on-disk size: 1883.8 KB)
+0065.733 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2300 files added (on-disk size: 1883.8 KB)
+0065.827 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2400 files added (on-disk size: 1883.8 KB)
+0065.957 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2500 files added (on-disk size: 1883.8 KB)
+0065.992 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (2506) added so far); re-opening (prior size: 1883.8 KB)
+0066.497 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2600 files added (on-disk size: 2140.6 KB)
+0066.616 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2700 files added (on-disk size: 2140.6 KB)
+0066.745 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2800 files added (on-disk size: 2140.6 KB)
+0066.851 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 2900 files added (on-disk size: 2140.6 KB)
+0066.949 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3000 files added (on-disk size: 2140.6 KB)
+0066.961 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.1 MB, 27360 files batched, 501 (3007) added so far); re-opening (prior size: 2140.6 KB)
+0067.651 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3100 files added (on-disk size: 2911 KB)
+0067.771 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3200 files added (on-disk size: 2911 KB)
+0067.896 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3300 files added (on-disk size: 2911 KB)
+0068.017 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3400 files added (on-disk size: 2911 KB)
+0068.124 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3500 files added (on-disk size: 2911 KB)
+0068.138 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.6 MB, 27360 files batched, 501 (3508) added so far); re-opening (prior size: 2911 KB)
+0068.803 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3600 files added (on-disk size: 3495.4 KB)
+0068.923 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3700 files added (on-disk size: 3495.4 KB)
+0069.056 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3800 files added (on-disk size: 3495.4 KB)
+0069.186 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 3900 files added (on-disk size: 3495.4 KB)
+0069.317 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4000 files added (on-disk size: 3495.4 KB)
+0069.337 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (4009) added so far); re-opening (prior size: 3495.4 KB)
+0069.870 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4100 files added (on-disk size: 3737.9 KB)
+0069.997 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4200 files added (on-disk size: 3737.9 KB)
+0070.109 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4300 files added (on-disk size: 3737.9 KB)
+0070.239 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4400 files added (on-disk size: 3737.9 KB)
+0070.366 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4500 files added (on-disk size: 3737.9 KB)
+0070.380 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (4510) added so far); re-opening (prior size: 3737.9 KB)
+0070.853 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4600 files added (on-disk size: 3982.3 KB)
+0070.952 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4700 files added (on-disk size: 3982.3 KB)
+0071.068 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4800 files added (on-disk size: 3982.3 KB)
+0071.197 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 4900 files added (on-disk size: 3982.3 KB)
+0071.355 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5000 files added (on-disk size: 3982.3 KB)
+0071.372 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (5011) added so far); re-opening (prior size: 3982.3 KB)
+0072.121 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5100 files added (on-disk size: 4240.2 KB)
+0072.282 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5200 files added (on-disk size: 4240.2 KB)
+0072.433 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5300 files added (on-disk size: 4240.2 KB)
+0072.556 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5400 files added (on-disk size: 4240.2 KB)
+0072.701 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5500 files added (on-disk size: 4240.2 KB)
+0072.715 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.3 MB, 27360 files batched, 501 (5512) added so far); re-opening (prior size: 4240.2 KB)
+0073.348 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5600 files added (on-disk size: 4685.6 KB)
+0073.484 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5700 files added (on-disk size: 4685.6 KB)
+0073.620 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5800 files added (on-disk size: 4685.6 KB)
+0073.813 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 5900 files added (on-disk size: 4685.6 KB)
+0074.046 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6000 files added (on-disk size: 4685.6 KB)
+0074.084 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.1 MB, 27360 files batched, 501 (6013) added so far); re-opening (prior size: 4685.6 KB)
+0074.834 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6100 files added (on-disk size: 5466.4 KB)
+0075.070 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6200 files added (on-disk size: 5466.4 KB)
+0075.319 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6300 files added (on-disk size: 5466.4 KB)
+0075.576 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6400 files added (on-disk size: 5466.4 KB)
+0075.875 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6500 files added (on-disk size: 5466.4 KB)
+0075.921 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 27360 files batched, 501 (6514) added so far); re-opening (prior size: 5466.4 KB)
+0076.717 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6600 files added (on-disk size: 5822.7 KB)
+0076.961 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6700 files added (on-disk size: 5822.7 KB)
+0077.226 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6800 files added (on-disk size: 5822.7 KB)
+0077.479 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 6900 files added (on-disk size: 5822.7 KB)
+0077.778 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7000 files added (on-disk size: 5822.7 KB)
+0077.820 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (7015) added so far); re-opening (prior size: 5822.7 KB)
+0078.390 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7100 files added (on-disk size: 6086.3 KB)
+0078.604 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7200 files added (on-disk size: 6086.3 KB)
+0078.835 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7300 files added (on-disk size: 6086.3 KB)
+0079.143 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7400 files added (on-disk size: 6086.3 KB)
+0079.431 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7500 files added (on-disk size: 6086.3 KB)
+0079.467 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 27360 files batched, 501 (7516) added so far); re-opening (prior size: 6086.3 KB)
+0080.459 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7600 files added (on-disk size: 6710.5 KB)
+0080.772 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7700 files added (on-disk size: 6710.5 KB)
+0081.033 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7800 files added (on-disk size: 6710.5 KB)
+0081.352 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 7900 files added (on-disk size: 6710.5 KB)
+0081.612 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8000 files added (on-disk size: 6710.5 KB)
+0081.661 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.8 MB, 27360 files batched, 501 (8017) added so far); re-opening (prior size: 6710.5 KB)
+0082.428 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8100 files added (on-disk size: 7042 KB)
+0082.723 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8200 files added (on-disk size: 7042 KB)
+0082.967 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8300 files added (on-disk size: 7042 KB)
+0083.194 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8400 files added (on-disk size: 7042 KB)
+0083.424 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8500 files added (on-disk size: 7042 KB)
+0083.473 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.6 MB, 27360 files batched, 501 (8518) added so far); re-opening (prior size: 7042 KB)
+0084.334 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8600 files added (on-disk size: 7627.6 KB)
+0084.630 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8700 files added (on-disk size: 7627.6 KB)
+0084.928 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8800 files added (on-disk size: 7627.6 KB)
+0085.208 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 8900 files added (on-disk size: 7627.6 KB)
+0085.478 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9000 files added (on-disk size: 7627.6 KB)
+0085.531 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 27360 files batched, 501 (9019) added so far); re-opening (prior size: 7627.6 KB)
+0086.367 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9100 files added (on-disk size: 8073.2 KB)
+0086.702 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9200 files added (on-disk size: 8073.2 KB)
+0087.027 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9300 files added (on-disk size: 8073.2 KB)
+0087.383 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9400 files added (on-disk size: 8073.2 KB)
+0087.634 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9500 files added (on-disk size: 8073.2 KB)
+0087.691 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (9520) added so far); re-opening (prior size: 8073.2 KB)
+0088.404 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9600 files added (on-disk size: 8279.8 KB)
+0088.662 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9700 files added (on-disk size: 8279.8 KB)
+0088.898 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9800 files added (on-disk size: 8279.8 KB)
+0089.203 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 9900 files added (on-disk size: 8279.8 KB)
+0089.479 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10000 files added (on-disk size: 8279.8 KB)
+0089.533 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.8 MB, 27360 files batched, 501 (10021) added so far); re-opening (prior size: 8279.8 KB)
+0090.322 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10100 files added (on-disk size: 8602.4 KB)
+0090.633 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10200 files added (on-disk size: 8602.4 KB)
+0090.908 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10300 files added (on-disk size: 8602.4 KB)
+0091.218 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10400 files added (on-disk size: 8602.4 KB)
+0091.490 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10500 files added (on-disk size: 8602.4 KB)
+0091.566 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.4 MB, 27360 files batched, 501 (10522) added so far); re-opening (prior size: 8602.4 KB)
+0092.289 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10600 files added (on-disk size: 8871 KB)
+0092.524 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10700 files added (on-disk size: 8871 KB)
+0092.770 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10800 files added (on-disk size: 8871 KB)
+0093.002 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 10900 files added (on-disk size: 8871 KB)
+0093.266 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11000 files added (on-disk size: 8871 KB)
+0093.335 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.3 MB, 27360 files batched, 501 (11023) added so far); re-opening (prior size: 8871 KB)
+0094.288 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11100 files added (on-disk size: 9702.8 KB)
+0094.655 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11200 files added (on-disk size: 9702.8 KB)
+0095.046 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11300 files added (on-disk size: 9702.8 KB)
+0095.398 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11400 files added (on-disk size: 9702.8 KB)
+0095.694 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11500 files added (on-disk size: 9702.8 KB)
+0095.782 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.3 MB, 27360 files batched, 501 (11524) added so far); re-opening (prior size: 9702.8 KB)
+0096.676 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11600 files added (on-disk size: 9938.9 KB)
+0096.927 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11700 files added (on-disk size: 9938.9 KB)
+0097.190 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11800 files added (on-disk size: 9938.9 KB)
+0097.456 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 11900 files added (on-disk size: 9938.9 KB)
+0097.693 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12000 files added (on-disk size: 9938.9 KB)
+0097.780 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.2 MB, 27360 files batched, 501 (12025) added so far); re-opening (prior size: 9938.9 KB)
+0098.663 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12100 files added (on-disk size: 10413.8 KB)
+0098.934 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12200 files added (on-disk size: 10413.8 KB)
+0099.234 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12300 files added (on-disk size: 10413.8 KB)
+0099.581 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12400 files added (on-disk size: 10413.8 KB)
+0099.908 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12500 files added (on-disk size: 10413.8 KB)
+0099.992 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (12526) added so far); re-opening (prior size: 10413.8 KB)
+0100.808 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12600 files added (on-disk size: 10633.5 KB)
+0101.089 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12700 files added (on-disk size: 10633.5 KB)
+0101.382 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12800 files added (on-disk size: 10633.5 KB)
+0101.654 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 12900 files added (on-disk size: 10633.5 KB)
+0101.975 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13000 files added (on-disk size: 10633.5 KB)
+0102.073 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 27360 files batched, 501 (13027) added so far); re-opening (prior size: 10633.5 KB)
+0103.127 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13100 files added (on-disk size: 11176.2 KB)
+0103.455 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13200 files added (on-disk size: 11176.2 KB)
+0103.722 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13300 files added (on-disk size: 11176.2 KB)
+0104.064 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13400 files added (on-disk size: 11176.2 KB)
+0104.388 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13500 files added (on-disk size: 11176.2 KB)
+0104.481 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.5 MB, 27360 files batched, 501 (13528) added so far); re-opening (prior size: 11176.2 KB)
+0106.333 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13600 files added (on-disk size: 12487.2 KB)
+0106.632 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13700 files added (on-disk size: 12487.2 KB)
+0106.964 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13800 files added (on-disk size: 12487.2 KB)
+0107.373 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 13900 files added (on-disk size: 12487.2 KB)
+0107.700 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14000 files added (on-disk size: 12487.2 KB)
+0107.811 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (14029) added so far); re-opening (prior size: 12487.2 KB)
+0108.666 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14100 files added (on-disk size: 12671.6 KB)
+0109.027 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14200 files added (on-disk size: 12671.6 KB)
+0109.291 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14300 files added (on-disk size: 12671.6 KB)
+0109.601 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14400 files added (on-disk size: 12671.6 KB)
+0109.946 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14500 files added (on-disk size: 12671.6 KB)
+0110.036 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.1 MB, 27360 files batched, 501 (14530) added so far); re-opening (prior size: 12671.6 KB)
+0111.153 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14600 files added (on-disk size: 13373.2 KB)
+0111.486 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14700 files added (on-disk size: 13373.2 KB)
+0111.840 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14800 files added (on-disk size: 13373.2 KB)
+0112.206 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 14900 files added (on-disk size: 13373.2 KB)
+0112.505 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15000 files added (on-disk size: 13373.2 KB)
+0112.625 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.6 MB, 27360 files batched, 501 (15031) added so far); re-opening (prior size: 13373.2 KB)
+0113.581 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15100 files added (on-disk size: 13687.2 KB)
+0113.966 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15200 files added (on-disk size: 13687.2 KB)
+0114.302 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15300 files added (on-disk size: 13687.2 KB)
+0114.654 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15400 files added (on-disk size: 13687.2 KB)
+0114.954 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15500 files added (on-disk size: 13687.2 KB)
+0115.061 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.8 MB, 27360 files batched, 501 (15532) added so far); re-opening (prior size: 13687.2 KB)
+0116.012 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15600 files added (on-disk size: 14030.6 KB)
+0116.290 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15700 files added (on-disk size: 14030.6 KB)
+0116.546 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15800 files added (on-disk size: 14030.6 KB)
+0116.797 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 15900 files added (on-disk size: 14030.6 KB)
+0117.051 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16000 files added (on-disk size: 14030.6 KB)
+0117.155 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 27360 files batched, 501 (16033) added so far); re-opening (prior size: 14030.6 KB)
+0117.997 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16100 files added (on-disk size: 14464.5 KB)
+0118.295 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16200 files added (on-disk size: 14464.5 KB)
+0118.598 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16300 files added (on-disk size: 14464.5 KB)
+0118.932 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16400 files added (on-disk size: 14464.5 KB)
+0119.318 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16500 files added (on-disk size: 14464.5 KB)
+0119.437 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.8 MB, 27360 files batched, 501 (16534) added so far); re-opening (prior size: 14464.5 KB)
+0120.429 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16600 files added (on-disk size: 14777.4 KB)
+0120.759 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16700 files added (on-disk size: 14777.4 KB)
+0121.074 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16800 files added (on-disk size: 14777.4 KB)
+0121.381 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 16900 files added (on-disk size: 14777.4 KB)
+0121.719 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17000 files added (on-disk size: 14777.4 KB)
+0121.827 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.6 MB, 27360 files batched, 501 (17035) added so far); re-opening (prior size: 14777.4 KB)
+0122.700 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17100 files added (on-disk size: 15123.7 KB)
+0122.983 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17200 files added (on-disk size: 15123.7 KB)
+0123.265 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17300 files added (on-disk size: 15123.7 KB)
+0123.553 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17400 files added (on-disk size: 15123.7 KB)
+0123.866 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17500 files added (on-disk size: 15123.7 KB)
+0123.986 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.4 MB, 27360 files batched, 501 (17536) added so far); re-opening (prior size: 15123.7 KB)
+0125.064 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17600 files added (on-disk size: 15612.4 KB)
+0125.386 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17700 files added (on-disk size: 15612.4 KB)
+0125.695 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17800 files added (on-disk size: 15612.4 KB)
+0126.058 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 17900 files added (on-disk size: 15612.4 KB)
+0126.416 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18000 files added (on-disk size: 15612.4 KB)
+0126.555 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 27360 files batched, 501 (18037) added so far); re-opening (prior size: 15612.4 KB)
+0127.580 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18100 files added (on-disk size: 16041.1 KB)
+0127.953 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18200 files added (on-disk size: 16041.1 KB)
+0128.289 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18300 files added (on-disk size: 16041.1 KB)
+0128.585 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18400 files added (on-disk size: 16041.1 KB)
+0128.891 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18500 files added (on-disk size: 16041.1 KB)
+0129.018 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (18538) added so far); re-opening (prior size: 16041.1 KB)
+0129.842 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18600 files added (on-disk size: 16234.6 KB)
+0130.064 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18700 files added (on-disk size: 16234.6 KB)
+0130.313 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18800 files added (on-disk size: 16234.6 KB)
+0130.549 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 18900 files added (on-disk size: 16234.6 KB)
+0130.778 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19000 files added (on-disk size: 16234.6 KB)
+0130.861 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.6 MB, 27360 files batched, 501 (19039) added so far); re-opening (prior size: 16234.6 KB)
+0131.755 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19100 files added (on-disk size: 16626.5 KB)
+0132.075 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19200 files added (on-disk size: 16626.5 KB)
+0132.329 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19300 files added (on-disk size: 16626.5 KB)
+0132.583 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19400 files added (on-disk size: 16626.5 KB)
+0132.832 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19500 files added (on-disk size: 16626.5 KB)
+0132.927 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.7 MB, 27360 files batched, 501 (19540) added so far); re-opening (prior size: 16626.5 KB)
+0133.903 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19600 files added (on-disk size: 16938.1 KB)
+0134.172 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19700 files added (on-disk size: 16938.1 KB)
+0134.499 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19800 files added (on-disk size: 16938.1 KB)
+0134.764 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 19900 files added (on-disk size: 16938.1 KB)
+0135.050 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20000 files added (on-disk size: 16938.1 KB)
+0135.165 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2 MB, 27360 files batched, 501 (20041) added so far); re-opening (prior size: 16938.1 KB)
+0136.413 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20100 files added (on-disk size: 17656.6 KB)
+0136.654 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20200 files added (on-disk size: 17656.6 KB)
+0136.932 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20300 files added (on-disk size: 17656.6 KB)
+0137.223 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20400 files added (on-disk size: 17656.6 KB)
+0137.538 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20500 files added (on-disk size: 17656.6 KB)
+0137.676 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (20542) added so far); re-opening (prior size: 17656.6 KB)
+0138.589 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20600 files added (on-disk size: 17820.2 KB)
+0138.844 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20700 files added (on-disk size: 17820.2 KB)
+0139.127 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20800 files added (on-disk size: 17820.2 KB)
+0139.420 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 20900 files added (on-disk size: 17820.2 KB)
+0139.694 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21000 files added (on-disk size: 17820.2 KB)
+0139.827 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.2 MB, 27360 files batched, 501 (21043) added so far); re-opening (prior size: 17820.2 KB)
+0140.743 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21100 files added (on-disk size: 17982.1 KB)
+0141.014 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21200 files added (on-disk size: 17982.1 KB)
+0141.333 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21300 files added (on-disk size: 17982.1 KB)
+0141.678 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21400 files added (on-disk size: 17982.1 KB)
+0142.010 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21500 files added (on-disk size: 17982.1 KB)
+0142.147 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.6 MB, 27360 files batched, 501 (21544) added so far); re-opening (prior size: 17982.1 KB)
+0143.180 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21600 files added (on-disk size: 18333.5 KB)
+0143.502 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21700 files added (on-disk size: 18333.5 KB)
+0143.790 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21800 files added (on-disk size: 18333.5 KB)
+0144.126 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 21900 files added (on-disk size: 18333.5 KB)
+0144.533 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22000 files added (on-disk size: 18333.5 KB)
+0144.691 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 27360 files batched, 501 (22045) added so far); re-opening (prior size: 18333.5 KB)
+0145.735 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22100 files added (on-disk size: 18676.6 KB)
+0146.115 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22200 files added (on-disk size: 18676.6 KB)
+0146.497 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22300 files added (on-disk size: 18676.6 KB)
+0146.937 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22400 files added (on-disk size: 18676.6 KB)
+0147.402 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22500 files added (on-disk size: 18676.6 KB)
+0147.567 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 27360 files batched, 501 (22546) added so far); re-opening (prior size: 18676.6 KB)
+0148.696 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22600 files added (on-disk size: 19275.5 KB)
+0149.144 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22700 files added (on-disk size: 19275.5 KB)
+0149.548 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22800 files added (on-disk size: 19275.5 KB)
+0149.974 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 22900 files added (on-disk size: 19275.5 KB)
+0150.513 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23000 files added (on-disk size: 19275.5 KB)
+0150.684 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 27360 files batched, 501 (23047) added so far); re-opening (prior size: 19275.5 KB)
+0151.748 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23100 files added (on-disk size: 19910.3 KB)
+0152.157 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23200 files added (on-disk size: 19910.3 KB)
+0152.529 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23300 files added (on-disk size: 19910.3 KB)
+0152.983 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23400 files added (on-disk size: 19910.3 KB)
+0153.455 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23500 files added (on-disk size: 19910.3 KB)
+0153.687 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2 MB, 27360 files batched, 501 (23548) added so far); re-opening (prior size: 19910.3 KB)
+0154.965 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23600 files added (on-disk size: 20687.3 KB)
+0155.436 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23700 files added (on-disk size: 20687.3 KB)
+0155.864 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23800 files added (on-disk size: 20687.3 KB)
+0156.299 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 23900 files added (on-disk size: 20687.3 KB)
+0156.732 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24000 files added (on-disk size: 20687.3 KB)
+0156.976 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.4 MB, 27360 files batched, 501 (24049) added so far); re-opening (prior size: 20687.3 KB)
+0158.483 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24100 files added (on-disk size: 21590 KB)
+0159.056 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24200 files added (on-disk size: 21590 KB)
+0159.741 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24300 files added (on-disk size: 21590 KB)
+0160.571 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24400 files added (on-disk size: 21590 KB)
+0161.015 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1 MB, 415 (24464) files added so far); re-opening (prior size: 21590 KB)
+0162.167 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24500 files added (on-disk size: 22008.2 KB)
+0162.645 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24600 files added (on-disk size: 22008.2 KB)
+0163.272 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24700 files added (on-disk size: 22008.2 KB)
+0164.025 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.3 MB, 328 (24792) files added so far); re-opening (prior size: 22008.2 KB)
+0164.836 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24800 files added (on-disk size: 22211.5 KB)
+0165.522 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 24900 files added (on-disk size: 22211.5 KB)
+0166.198 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25000 files added (on-disk size: 22211.5 KB)
+0166.799 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25100 files added (on-disk size: 22211.5 KB)
+0167.017 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.1 MB, 342 (25134) files added so far); re-opening (prior size: 22211.5 KB)
+0168.233 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25200 files added (on-disk size: 22317.4 KB)
+0168.814 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25300 files added (on-disk size: 22317.4 KB)
+0169.443 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25400 files added (on-disk size: 22317.4 KB)
+0170.019 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1 MB, 356 (25490) files added so far); re-opening (prior size: 22317.4 KB)
+0171.261 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25500 files added (on-disk size: 22664.7 KB)
+0172.164 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25600 files added (on-disk size: 22664.7 KB)
+0172.824 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25700 files added (on-disk size: 22664.7 KB)
+0173.460 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25800 files added (on-disk size: 22664.7 KB)
+0174.019 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.4 MB, 395 (25885) files added so far); re-opening (prior size: 22664.7 KB)
+0175.375 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 25900 files added (on-disk size: 27599 KB)
+0175.926 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26000 files added (on-disk size: 27599 KB)
+0176.471 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26100 files added (on-disk size: 27599 KB)
+0177.079 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26200 files added (on-disk size: 27599 KB)
+0177.775 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26300 files added (on-disk size: 27599 KB)
+0178.016 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (4.2 MB, 455 (26340) files added so far); re-opening (prior size: 27599 KB)
+0179.619 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26400 files added (on-disk size: 32032.3 KB)
+0180.209 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26500 files added (on-disk size: 32032.3 KB)
+0180.795 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26600 files added (on-disk size: 32032.3 KB)
+0181.460 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26700 files added (on-disk size: 32032.3 KB)
+0182.016 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (7.5 MB, 432 (26772) files added so far); re-opening (prior size: 32032.3 KB)
+0183.624 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26800 files added (on-disk size: 39780.8 KB)
+0184.243 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 26900 files added (on-disk size: 39780.8 KB)
+0184.874 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 27000 files added (on-disk size: 39780.8 KB)
+0185.490 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 27100 files added (on-disk size: 39780.8 KB)
+0186.019 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.3 MB, 426 (27198) files added so far); re-opening (prior size: 39780.8 KB)
+0187.135 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 27200 files added (on-disk size: 42168.4 KB)
+0187.782 (0) Zip: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip.tmp: 27300 files added (on-disk size: 42168.4 KB)
+0189.648 (0) Created others zip (0) - 43233.6 KB in 181 s (238.8 KB/s) (SHA1 checksum: ef492104dcc1109855cba1ba87291fb5c4c6926b)
+0189.652 (0) Deleting old temporary file: backup_2016-10-12-1126_Relibond_46e317155c9c-others-cachelist--1-info.tmp
+0189.655 (0) Deleting old temporary file: backup_2016-10-12-1126_Relibond_46e317155c9c-others-cachelist--1-zfd.gz.tmp
+0189.657 (0) Deleting old temporary file: backup_2016-10-12-1126_Relibond_46e317155c9c-others-cachelist--1-zfb.gz.tmp
+0189.671 (0) Saving backup status to database (elements: 8)
+0189.677 (0) Beginning creation of database dump (WordPress DB)
+0189.695 (0) Table rb_options: Total expected rows (approximate): 224
+0189.741 (0) Table rb_options: Total rows added: 219 in 0.04 seconds
+0189.748 (0) Table rb_options: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_options.table.gz - 105.5 KB)
+0189.759 (0) Table rb_users: Total expected rows (approximate): 3
+0189.764 (0) Table rb_users: Total rows added: 3 in 0.00 seconds
+0189.767 (0) Table rb_users: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_users.table.gz - 0.7 KB)
+0189.777 (0) Table rb_usermeta: Total expected rows (approximate): 50
+0189.784 (0) Table rb_usermeta: Total rows added: 54 in 0.01 seconds
+0189.787 (0) Table rb_usermeta: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_usermeta.table.gz - 1.5 KB)
+0189.797 (0) Table rb_commentmeta: Total expected rows (approximate): 0
+0189.804 (0) Table rb_commentmeta: Total rows added: 0 in 0.00 seconds
+0189.807 (0) Table rb_commentmeta: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_commentmeta.table.gz - 0.4 KB)
+0189.818 (0) Table rb_comments: Total expected rows (approximate): 0
+0189.827 (0) Table rb_comments: Total rows added: 1 in 0.01 seconds
+0189.831 (0) Table rb_comments: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_comments.table.gz - 0.7 KB)
+0189.848 (0) Table rb_links: Total expected rows (approximate): 0
+0189.853 (0) Table rb_links: Total rows added: 0 in 0.00 seconds
+0189.856 (0) Table rb_links: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_links.table.gz - 0.4 KB)
+0189.866 (0) Table rb_postmeta: Total expected rows (approximate): 1055
+0189.901 (0) Table rb_postmeta: Total rows added: 1037 in 0.03 seconds
+0189.904 (0) Table rb_postmeta: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_postmeta.table.gz - 12 KB)
+0189.913 (0) Table rb_posts: Total expected rows (approximate): 133
+0189.941 (0) Table rb_posts: Total rows added: 136 in 0.03 seconds
+0189.945 (0) Table rb_posts: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_posts.table.gz - 5.5 KB)
+0189.955 (0) Table rb_term_relationships: Total expected rows (approximate): 5
+0189.961 (0) Table rb_term_relationships: Total rows added: 5 in 0.00 seconds
+0189.964 (0) Table rb_term_relationships: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_term_relationships.table.gz - 0.4 KB)
+0189.976 (0) Table rb_term_taxonomy: Total expected rows (approximate): 2
+0189.982 (0) Table rb_term_taxonomy: Total rows added: 2 in 0.00 seconds
+0189.985 (0) Table rb_term_taxonomy: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_term_taxonomy.table.gz - 0.4 KB)
+0189.997 (0) Table rb_termmeta: Total expected rows (approximate): 0
+0190.002 (0) Table rb_termmeta: Total rows added: 0 in 0.00 seconds
+0190.006 (0) Table rb_termmeta: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_termmeta.table.gz - 0.4 KB)
+0190.020 (0) Table rb_terms: Total expected rows (approximate): 2
+0190.028 (0) Table rb_terms: Total rows added: 2 in 0.00 seconds
+0190.031 (0) Table rb_terms: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_terms.table.gz - 0.4 KB)
+0190.047 (0) Table rb_nf_objectmeta: Total expected rows (approximate): 80
+0190.055 (0) Table rb_nf_objectmeta: Total rows added: 80 in 0.01 seconds
+0190.058 (0) Table rb_nf_objectmeta: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_nf_objectmeta.table.gz - 1.2 KB)
+0190.070 (0) Table rb_nf_objects: Total expected rows (approximate): 4
+0190.075 (0) Table rb_nf_objects: Total rows added: 4 in 0.00 seconds
+0190.078 (0) Table rb_nf_objects: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_nf_objects.table.gz - 0.3 KB)
+0190.091 (0) Table rb_nf_relationships: Total expected rows (approximate): 3
+0190.103 (0) Table rb_nf_relationships: Total rows added: 3 in 0.01 seconds
+0190.106 (0) Table rb_nf_relationships: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_nf_relationships.table.gz - 0.4 KB)
+0190.115 (0) Table rb_ninja_forms_fav_fields: Total expected rows (approximate): 17
+0190.123 (0) Table rb_ninja_forms_fav_fields: Total rows added: 17 in 0.01 seconds
+0190.131 (0) Table rb_ninja_forms_fav_fields: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_ninja_forms_fav_fields.table.gz - 2.6 KB)
+0190.144 (0) Table rb_ninja_forms_fields: Total expected rows (approximate): 5
+0190.156 (0) Table rb_ninja_forms_fields: Total rows added: 5 in 0.01 seconds
+0190.159 (0) Table rb_ninja_forms_fields: finishing file (backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_ninja_forms_fields.table.gz - 1 KB)
+0190.171 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_options.table.gz (1/17): adding to final database dump
+0190.206 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_users.table.gz (2/17): adding to final database dump
+0190.210 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_usermeta.table.gz (3/17): adding to final database dump
+0190.219 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_commentmeta.table.gz (4/17): adding to final database dump
+0190.223 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_comments.table.gz (5/17): adding to final database dump
+0190.226 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_links.table.gz (6/17): adding to final database dump
+0190.230 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_postmeta.table.gz (7/17): adding to final database dump
+0190.251 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_posts.table.gz (8/17): adding to final database dump
+0190.257 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_term_relationships.table.gz (9/17): adding to final database dump
+0190.259 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_term_taxonomy.table.gz (10/17): adding to final database dump
+0190.263 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_termmeta.table.gz (11/17): adding to final database dump
+0190.266 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_terms.table.gz (12/17): adding to final database dump
+0190.271 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_nf_objectmeta.table.gz (13/17): adding to final database dump
+0190.275 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_nf_objects.table.gz (14/17): adding to final database dump
+0190.278 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_nf_relationships.table.gz (15/17): adding to final database dump
+0190.280 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_ninja_forms_fav_fields.table.gz (16/17): adding to final database dump
+0190.284 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db-table-rb_ninja_forms_fields.table.gz (17/17): adding to final database dump
+0190.287 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db.gz: finished writing out complete database file (96 KB)
+0190.302 (0) Total database tables backed up: 17 (backup_2016-10-12-1126_Relibond_46e317155c9c-db.gz, size: 133133, checksum (SHA1): f248019efe522aa601213a68bc70885cc5685f77)
+0190.314 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0190.316 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0190.318 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0190.320 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip: others: This file has not yet been successfully uploaded: will queue
+0190.322 (0) backup_2016-10-12-1126_Relibond_46e317155c9c-db.gz: db: This file has not yet been successfully uploaded: will queue
+0190.324 (0) Saving backup history. Total backup size: 58.6 MB
+0190.330 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0190.338 (0) Cloud backup selection (1/1): none (last)
+0190.340 (0) No remote despatch: user chose no remote backup service
+0190.346 (0) Recording as successfully uploaded: backup_2016-10-12-1126_Relibond_46e317155c9c-plugins.zip (5129e400319f0b40dd1c28caea106094)
+0190.357 (0) Recording as successfully uploaded: backup_2016-10-12-1126_Relibond_46e317155c9c-themes.zip (798e644dccda0831351b5b4808164c37)
+0190.365 (0) Recording as successfully uploaded: backup_2016-10-12-1126_Relibond_46e317155c9c-uploads.zip (69a96c10ee27b8cfbbcc375baf0f4b30)
+0190.373 (0) Recording as successfully uploaded: backup_2016-10-12-1126_Relibond_46e317155c9c-others.zip (bfff4f16a47341bce728ddfebfc30608)
+0190.382 (0) Recording as successfully uploaded: backup_2016-10-12-1126_Relibond_46e317155c9c-db.gz (5dfda9a026ddd942617e40a863079bea)
+0190.390 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0190.393 (0) Number of backup sets in history: 3; groups (db): 1
+0190.395 (0) Examining (for databases) backup set with group_id=0, nonce=46e317155c9c, datestamp=1476264383 (Oct 12 2016 09:26:23)
+0190.398 (0) This backup set is the backup set just made, so will not be deleted.
+0190.399 (0) Examining (for databases) backup set with group_id=0, nonce=a73e97b568de, datestamp=1476263754 (Oct 12 2016 09:15:54)
+0190.401 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0190.403 (0) Examining (for databases) backup set with group_id=0, nonce=a73e97b568de, datestamp=1476263700 (Oct 12 2016 09:15:00)
+0190.405 (0) Number of backup sets in history: 3; groups (files): 1
+0190.407 (0) Examining (for files) backup set with nonce=46e317155c9c, datestamp=1476264383 (Oct 12 2016 09:26:23)
+0190.408 (0) This backup set is the backup set just made, so will not be deleted.
+0190.411 (0) This backup set is the backup set just made, so will not be deleted.
+0190.411 (0) This backup set is the backup set just made, so will not be deleted.
+0190.411 (0) This backup set is the backup set just made, so will not be deleted.
+0190.412 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0190.413 (0) Examining (for files) backup set with nonce=a73e97b568de, datestamp=1476263754 (Oct 12 2016 09:15:54)
+0190.415 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0190.417 (0) Examining (for files) backup set with nonce=a73e97b568de, datestamp=1476263700 (Oct 12 2016 09:15:00)
+0190.419 (0) plugins: over retain limit (2); will delete this file entity
+0190.421 (0) themes: over retain limit (2); will delete this file entity
+0190.423 (0) uploads: over retain limit (2); will delete this file entity
+0190.425 (0) Delete file: backup_2016-10-12-1115_Relibond_a73e97b568de-plugins.zip, service=none
+0190.427 (0) Deleting local copy (backup_2016-10-12-1115_Relibond_a73e97b568de-plugins.zip)
+0190.431 (0) Delete file: backup_2016-10-12-1115_Relibond_a73e97b568de-themes.zip, service=none
+0190.432 (0) Deleting local copy (backup_2016-10-12-1115_Relibond_a73e97b568de-themes.zip)
+0190.435 (0) Delete file: backup_2016-10-12-1115_Relibond_a73e97b568de-uploads.zip, service=none
+0190.437 (0) Deleting local copy (backup_2016-10-12-1115_Relibond_a73e97b568de-uploads.zip)
+0190.442 (0) This backup set is now empty; will remove from history
+0190.443 (0) Deleting log file (log.a73e97b568de.txt)
+0190.446 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0190.456 (0) Resume backup (46e317155c9c, 0): finish run
+0190.463 (0) Decremented the semaphore (fd) by 1
+0190.467 (0) Semaphore (fd) unlocked
+0190.468 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0190.476 (0) Fetching RSS news feed
+0190.578 (0) Fetched RSS news feed; result is a: SimplePie
+0190.587 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: ar@ty...
+0192.752 (0) The backup apparently succeeded and is now complete

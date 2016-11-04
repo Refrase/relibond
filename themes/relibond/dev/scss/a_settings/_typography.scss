@@ -35,6 +35,8 @@ h4 { font-size: $fontSize-large; }
 h5 { font-size: $fontSize-base; }
 h6 { font-size: $fontSize-small; }
 
+ul { list-style-position: inside; }
+
 p, a, li {
   color: $color-brandBlack;
   font-family: $fontFamily-body;

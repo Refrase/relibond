@@ -1426,6 +1426,10 @@ h6 {
   font-size: 12px;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 p, a, li {
   color: #111;
   font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
